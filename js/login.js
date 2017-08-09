@@ -9,9 +9,7 @@ $(function() {
     var resStr = $.cookie("users");   
     resStr = resStr ? resStr : "{}";
     var resObj = JSON.parse(resStr);
-    console.log(resObj);
   	if(resObj.userid){
-    	console.log("saaa");
         $("#loginname").val(resObj.userid);
         $("#loginpwd").val(resObj.pass); 	
     }
@@ -92,7 +90,6 @@ $(function() {
 			return;
 		}
 		if ($("#chkrememberMe").prop('checked')) {
-			console.log("aaa");
 		    uesrObj.userid = loginname;
 			uesrObj.pass = loginpwd;
 			var users = JSON.stringify(uesrObj);

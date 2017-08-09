@@ -88,7 +88,6 @@ $(function(){
 		
 		init(".guide-cart-num");//初始化购物车
 		$(".right-guide li").hover(function(){
-			console.log($(this));
 			$(this).children("em").stop().animate({"left":"-70px","width":"80px"},200);
 		},function(){
 			$(this).children("em").stop().animate({"left":"0px","width":"50px"},200);

@@ -172,7 +172,6 @@ $(function() {
 	
 	 	//鼠标滑过手机扫码出现图片
 		$(".data-sao").hover(function(){
-			console.log("aaa");
 			$(this).find(".dstelma").show();
 		},function(){
 			$(this).find(".dstelma").hide();
