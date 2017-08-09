@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的奥莱购---华盛奥特莱斯官方购物网站</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.jquery.hover2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/countDown.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部分页-->
+		<div class="top"></div>
+		<!--主体-->
+		<div id="main">
+			<!--logo&search分页-->
+			<header class="header"></header>
+			<!--百度接口拼接-->
+			<script type="text/javascript">
+				function data1(data){
+					data = data.s;
+					var html = "";
+					for(var i in data){
+						html+="<li><a href='https://www.baidu.com/s?wd="+data[i]+"'>"+data[i]+"</a></li>";
+					}
+					$("#sechList").html(html).show();
+				}	
+			</script>
+			<!--nav分页-->
+			<nav class="navpag w_full"></nav>
+			<!--轮播图-->
+			<div id="banner">
+				<div class="sliderList">
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="images/banner01.jpg" /></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/banner02.jpg" /></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="images/banner03.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav_num">
+					<span class="current">1</span>
+					<span>2</span>
+					<span>3</span>
+				</div>
+				<div class="sliderBtns prev"></div>
+				<div class="sliderBtns next"></div>
+			</div>
+
+			<!--搜索悬浮框-->
+			<div class="searchFix" style="display: none;"></div>
+			<!--置顶4个折扣活动-->
+			<div class="discount">
+				<div class="dist-cont w_1200 m_auto">
+					<ul class="clear">
+						<script id="list" type="text/html">
+							{{each discount as value}}
+							<li>
+								<a href="list.html"><img src="{{value}}" /></a>
+							</li>
+							{{/each}}
+						</script>
+					</ul>
+				</div>
+			</div>
+			<!--限时秒杀-->
+			<div class="Seckill floor">
+				<!--标题-->
+				<div class="tit m_auto w_1200">
+					限时秒杀
+					<span>Time Spike</span>
+				</div>
+				
+				<!--秒杀内容-->
+				<div class="seckill-cont w_1200 m_auto">
+					<!--倒计时-->
+					<div class="countdown">
+						<em>距离本场结束</em>
+						<div class="time-item">
+							<span class="hour_num"></span><span class="split">:</span><span class="min_num"></span><span class="split">:</span><span class="sec_num"></span>
+						</div>
+					</div>
+					<!--产品内容-->
+					<div class="count clear">
+						<div class="bImg fl valign">
+							<a href="list.html"><img src="images/bImg.jpg" /></a>
+						</div>
+						<!--产品展示主体部分-->
+						<div id="seckill-scroll" class="seckill-scroll fl">
+							<div class="seckBox">
+								<ul class="seckList">
+									<script id="list1" type="text/html">
+										{{each seckill as item}}
+										<li>
+											<a href="detail.html?id={{item.id}}" class="picture ver_middle" data-id="{{item.id}}"><img src="{{item.path}}" /></a>
+											<a href="detail.html?id={{item.id}}" class="title" data-id="{{item.id}}">{{item.title}}</a>
+											<p class="price">
+												<span>{{item.price}}</span>
+												<del>{{item.del}}</del>
+											</p>
+										</li>
+										{{/each}}
+									</script>
+								</ul>
+							</div>
+							<div class="scroll-btn prev"></div>
+							<div class="scroll-btn next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--专柜精选feature-->
+			<div class="Feature w_full floor">
+				<!--标题-->
+				<div class="tit m_auto w_1200">
+					专柜精选
+					<span>Brand Wew</span>
+				</div>
+				<!--专柜主体 -->
+				<div class="feature-cont w_1200 m_auto">
+					<!--最新商品-->
+					<div class="brandNew clear">
+						<!--商品列表-->
+						<script id="list-feature" type="text/html">
+							{{each features as feature}}
+							<div class="brandNew-item fl">
+								<a href="list.html" class="ver_middle">
+									<img src="{{feature.bNewBImg}}" class="brandNew-bImg" />
+									<img src="{{feature.bNewlogo}}" class="brandNew-logo" />
+									<!--鼠标蒙层效果-->
+									<div class="brand-shadow">
+										<p class="bname">{{feature.title}}</p>
+										<p>{{feature.sale}}</p>
+									</div>
+								</a>
+							</div>
+							{{/each}}
+						</script>
+					</div>
+				</div>
+			</div>
+
+			<!--国际奢品-->
+			<div class="Luxury w_full floor">
+				<div class="tit w_1200 m_auto">
+					国际奢品
+					<span>Luxury Goods</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-luxury" type="text/html">
+
+						<div class="floor-box clear">
+							<!--左边模块-大图+文字-->
+							<div class="cate fl">
+								{{each luxurys[1] as leftBImgs}}
+								<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+								{{/each}}
+								<div class="cate-cont">
+									<ul class="tr-3">
+										{{each luxurys[0].intro as intros}}
+										<li>
+											<a href="javascript:;"><span>{{intros}}</span></a>
+										</li>
+										{{/each}}
+									</ul>
+									<div class="tit" style="background: #7fced2;">
+										<a href="javascript:;">更多国际奢品 &gt;&gt;</a>
+									</div>
+								</div>
+							</div>
+							<!--右边模块-推荐商品-->
+							<div class="recommond fl recommond-1">
+								<!--上半部分-->
+								<div class="up">
+									<ul class="clear">
+										{{each luxurys[2].rightImg as rightImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<!--下半部分-->
+								<div class="down">
+									<ul>
+										{{each luxurys as prods index}} {{if index > 3}}
+										<li>
+											<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+												<img src="{{prods.path}}" class="picture" />
+												<p class="luxury-title">{{prods.title}}</p>
+												<p class="luxury-price">{{prods.price}}</p>
+											</a>
+										</li>
+										{{/if}} {{/each}}
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--产品滚动区域-->
+						<div id="luxury-scroll" class="logo-scroll w_full m_t_10">
+							<div class="box">
+								<ul class="list">
+									{{each luxurys[3].scroolImg as scroolImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<a href="javascript:;" class="prev logoScroll-res"></a>
+							<a href="javascript:;" class="next logoScroll-res"></a>
+						</div>
+
+					</script>
+
+				</div>
+			</div>
+
+			<!--跨境优品-->
+			<div class="Cross w_full floor">
+				<div class="tit w_1200 m_auto">
+					跨境优品
+					<span>Cross-border Goods</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-cross" type="text/html">
+						<div class="floor-box clear">
+							<!--左边模块-大图+文字-->
+							<div class="cate fl">
+								{{each crosss[1] as leftBImgs}}
+								<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+								{{/each}}
+								<div class="cate-cont">
+									<ul class="tr-3">
+										{{each crosss[0].intro as intros}}
+										<li>
+											<a href="javascript:;"><span>{{intros}}</span></a>
+										</li>
+										{{/each}}
+									</ul>
+									<div class="tit" style="background: #7fced2;">
+										<a href="javascript:;">更多跨境优品 &gt;&gt;</a>
+									</div>
+								</div>
+							</div>
+							<!--右边模块-推荐商品-->
+							<div class="recommond fl recommond-2">
+								<!--热门推荐-->
+								<div class="hotTop fl">
+									<ul>
+										{{each crosss[2].rightImg as rightImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<!--右侧推荐-->
+								<div class="up fl">
+									<ul class="clear">
+										{{each crosss as prods index}} {{if index > 3}}
+										<li>
+											<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+												<img src="{{prods.path}}" />
+												<p class="cross-item">{{prods.tit4}}</p>
+												<p class="cross-name-price">
+													<span class="cross-name">{{prods.title}}</span>
+													<span class="cross-price">{{prods.price}}</span>
+												</p>
+											</a>
+										</li>
+										{{/if}} {{/each}}
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--产品滚动区域-->
+						<div id="cross-scroll" class="logo-scroll w_full m_t_10">
+							<div class="box">
+								<ul class="list">
+									{{each luxurys[3].scroolImg as scroolImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<!--左右滑动按钮-->
+							<a href="javascript:;" class="prev logoScroll-res"></a>
+							<a href="javascript:;" class="next logoScroll-res"></a>
+						</div>
+					</script>
+				</div>
+			</div>
+
+			<!--户外运动-->
+			<div class="Outerdoor w_full floor">
+				<div class="tit w_1200 m_auto">
+					运动户外
+					<span>Sport&amp;Outdoors</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-outerdoor" type="text/html">
+						<div class="floor-box">
+							<!--上左大图+文字-->
+							<div class="cate-1 fl">
+								{{each outerdoors[1] as leftBImgs}}
+								<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+								{{/each}}
+								<div class="cate-cont">
+									<ul class="td-4 clear">
+										{{each outerdoors[0].intro as intros}}
+										<li>
+											<a href="javascript:;">{{intros}}</a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--推荐商品-->
+							<div class="recommond fl recommond-3">
+								<div class="up">
+									<ul>
+										{{each outerdoors[2].rightImg as rightImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<div class="down">
+									<ul>
+										{{each outerdoors as prods index}} {{if index > 3}}
+										<li>
+											<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+												<img src="{{prods.path}}" />
+												<p class="outerdoor-item">{{prods.tit4}}</p>
+												<p class="outerdoor-name">{{prods.title}}</p>
+												<p class="outerdoor-price">{{prods.price}}</p>
+											</a>
+										</li>
+										{{/if}} {{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--滚动播放区域-->
+							<div id="outerdoor-scroll" class="logo-scroll-s w_full">
+								<div class="box">
+									<ul class="list">
+										{{each outerdoors[3].scroolImg as scroolImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<!--左右滑动按钮-->
+								<a href="javascript:;" class="prev logoScroll-res"></a>
+								<a href="javascript:;" class="next logoScroll-res"></a>
+							</div>
+						</div>
+					</script>
+				</div>
+			</div>
+
+			<!--潮流女装-->
+			<div class="Fashion w_full floor">
+				<div class="tit w_1200 m_auto">
+					潮流女装
+					<span>Fashionable Women's Wear</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-fashion" type="text/html">
+						<div class="floor-box">
+							<!--上左大图+文字-->
+							<div class="cate-1 fl">
+								{{each fashions[1] as leftBImgs}}
+								<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+								{{/each}}
+								<div class="cate-cont">
+									<ul class="td-4 clear">
+										{{each fashions[0].intro as intros}}
+										<li>
+											<a href="javascript:;">{{intros}}</a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--推荐商品-->
+							<div class="recommond fl recommond-3">
+								<div class="up">
+									<ul>
+										{{each fashions[2].rightImg as rightImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<div class="down">
+									<ul>
+										{{each fashions as prods index}} {{if index > 3}}
+										<li>
+											<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+												<img src="{{prods.path}}" />
+												<p class="outerdoor-item">{{prods.tit4}}</p>
+												<p class="outerdoor-name">{{prods.title}}</p>
+												<p class="outerdoor-price">{{prods.price}}</p>
+											</a>
+										</li>
+										{{/if}} {{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--滚动播放区域-->
+							<div id="outerdoor-scroll" class="logo-scroll-s w_full">
+								<div class="box">
+									<ul class="list">
+										{{each fashions[3].scroolImg as scroolImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+										</li>
+										{{/each}} . . </ul>
+								</div>
+								<!--左右滑动按钮-->
+								<a href="javascript:;" class="prev logoScroll-res"></a>
+								<a href="javascript:;" class="next logoScroll-res"></a>
+							</div>
+						</div>
+					</script>
+				</div>
+			</div>
+
+			<!--精选男装-->
+			<div class="Manwear w_full floor">
+				<div class="tit w_1200 m_auto">
+					精选男装
+					<span>Selected Men's Wear</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-manwear" type="text/html">
+						<div class="floor-box">
+							<!--上左大图+文字-->
+							<div class="cate-1 fl">
+								{{each menwears[1] as leftBImgs}}
+								<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+								{{/each}}
+								<div class="cate-cont">
+									<ul class="td-4 clear">
+										{{each menwears[0].intro as intros}}
+										<li>
+											<a href="javascript:;">{{intros}}</a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--推荐商品-->
+							<div class="recommond fl recommond-3">
+								<div class="up">
+									<ul>
+										{{each menwears[2].rightImg as rightImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<div class="down">
+									<ul>
+										{{each menwears as prods index}} {{if index > 3}}
+										<li>
+											<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+												<img src="{{prods.path}}" />
+												<p class="outerdoor-item">{{prods.tit4}}</p>
+												<p class="outerdoor-name">{{prods.title}}</p>
+												<p class="outerdoor-price">{{prods.price}}</p>
+											</a>
+										</li>
+										{{/if}} {{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--滚动播放区域-->
+							<div id="outerdoor-scroll" class="logo-scroll-s w_full">
+								<div class="box">
+									<ul class="list">
+										{{each menwears[3].scroolImg as scroolImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<!--左右滑动按钮-->
+								<a href="javascript:;" class="prev logoScroll-res"></a>
+								<a href="javascript:;" class="next logoScroll-res"></a>
+							</div>
+						</div>
+					</script>
+				</div>
+			</div>
+
+			<!--潮流鞋靴-->
+			<div class="Shoe w_full floor">
+				<div class="tit w_1200 m_auto">
+					潮流鞋靴
+					<span>Trendy Shoe</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-shoe" type="text/html">
+						<div class="floor-box">
+							<!--上左大图+文字-->
+							<div class="cate-1 fl">
+								{{each shoes[1] as leftBImgs}}
+								<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+								{{/each}}
+								<div class="cate-cont">
+									<ul class="td-4 clear">
+										{{each shoes[0].intro as intros}}
+										<li>
+											<a href="javascript:;">{{intros}}</a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--推荐商品-->
+							<div class="recommond fl recommond-3">
+								<div class="up">
+									<ul>
+										{{each shoes[2].rightImg as rightImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<div class="down">
+									<ul>
+										{{each shoes as prods index}} {{if index > 3}}
+										<li>
+											<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+												<img src="{{prods.path}}" />
+												<p class="outerdoor-item">{{prods.tit4}}</p>
+												<p class="outerdoor-name">{{prods.title}}</p>
+												<p class="outerdoor-price">{{prods.price}}</p>
+											</a>
+										</li>
+										{{/if}} {{/each}}
+									</ul>
+								</div>
+							</div>
+							<!--滚动播放区域-->
+							<div id="outerdoor-scroll" class="logo-scroll-s w_full">
+								<div class="box">
+									<ul class="list">
+										{{each shoes[3].scroolImg as scroolImgs}}
+										<li>
+											<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<!--左右滑动按钮-->
+								<a href="javascript:;" class="prev logoScroll-res"></a>
+								<a href="javascript:;" class="next logoScroll-res"></a>
+							</div>
+						</div>
+					</script>
+				</div>
+			</div>
+
+			<!--时尚箱包-->
+			<div class="Bags w_full floor">
+				<div class="tit w_1200 m_auto">
+					时尚箱包
+					<span>Fashion bags</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-bags" type="text/html">
+					<div class="floor-box">
+						<!--上左大图+文字-->
+						<div class="cate-1 fl">
+							{{each bagss[1] as leftBImgs}}
+							<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+							{{/each}}
+							<div class="cate-cont">
+								<ul class="td-4 clear">
+									{{each bagss[0].intro as intros}}
+									<li>
+										<a href="javascript:;">{{intros}}</a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						<!--推荐商品-->
+						<div class="recommond fl recommond-3">
+							<div class="up">
+								<ul>
+									{{each bagss[2].rightImg as rightImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<div class="down">
+								<ul>
+									{{each bagss as prods index}} {{if index > 3}}
+									<li>
+										<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+											<img src="{{prods.path}}" />
+											<p class="outerdoor-item">{{prods.tit4}}</p>
+											<p class="outerdoor-name">{{prods.title}}</p>
+											<p class="outerdoor-price">{{prods.price}}</p>
+										</a>
+									</li>
+									{{/if}} 
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						<!--滚动播放区域-->
+						<div id="outerdoor-scroll" class="logo-scroll-s w_full">
+							<div class="box">
+								<ul class="list">
+									{{each bagss[3].scroolImg as scroolImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<!--左右滑动按钮-->
+							<a href="javascript:;" class="prev logoScroll-res"></a>
+							<a href="javascript:;" class="next logoScroll-res"></a>
+						</div>
+					</div>
+				</script>
+				</div>
+			</div>
+
+			<!--精选内衣-->
+			<div class="Underwear w_full floor">
+				<div class="tit w_1200 m_auto">
+					精选内衣
+					<span>Trendy Shoe</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-underwear" type="text/html">
+					<div class="floor-box">
+						<!--上左大图+文字-->
+						<div class="cate-1 fl">
+							{{each underwears[1] as leftBImgs}}
+							<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+							{{/each}}
+							<div class="cate-cont">
+								<ul class="td-4 clear">
+									{{each underwears[0].intro as intros}}
+									<li>
+										<a href="javascript:;">{{intros}}</a>
+									</li>
+									{{/each}}
+								</ul>
+							
+							</div>
+						</div>
+						<!--推荐商品-->
+						<div class="recommond fl recommond-3">
+							<div class="up">
+								<ul>
+									{{each underwears[2].rightImg as rightImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<div class="down">
+								<ul>
+									{{each underwears as prods index}} {{if index > 3}}
+									<li>
+										<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+											<img src="{{prods.path}}" />
+											<p class="outerdoor-item">{{prods.tit4}}</p>
+											<p class="outerdoor-name">{{prods.title}}</p>
+											<p class="outerdoor-price">{{prods.price}}</p>
+										</a>
+									</li>
+									{{/if}} 
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						<!--滚动播放区域-->
+						<div id="outerdoor-scroll" class="logo-scroll-s w_full">
+							<div class="box">
+								<ul class="list">
+									{{each underwears[3].scroolImg as scroolImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<!--左右滑动按钮-->
+							<a href="javascript:;" class="prev logoScroll-res"></a>
+							<a href="javascript:;" class="next logoScroll-res"></a>
+						</div>
+					</div>
+				</script>
+				</div>
+			</div>
+
+			<!--可爱童装-->
+			<div class="Children w_full floor">
+				<div class="tit w_1200 m_auto">
+					可爱童装
+					<span>Lovely Children's Wear</span>
+				</div>
+				<div class="floor-cont w_1200 m_auto">
+					<script id="list-children" type="text/html">
+					<div class="floor-box">
+						<!--上左大图+文字-->
+						<div class="cate-1 fl">
+							{{each childrens[1] as leftBImgs}}
+							<a href="list.html" class="ver_middle"><img src="{{leftBImgs}}" /></a>
+							{{/each}}
+							<div class="cate-cont">
+								<ul class="td-4 clear">
+									{{each childrens[0].intro as intros}}
+									<li>
+										<a href="javascript:;">{{intros}}</a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						<!--推荐商品-->
+						<div class="recommond fl recommond-3">
+							<div class="up">
+								<ul>
+									{{each childrens[2].rightImg as rightImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{rightImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<div class="down">
+								<ul>
+									{{each childrens as prods index}} {{if index > 3}}
+									<li>
+										<a href="detail.html?id={{prods.id}}" class="ver_middle" data-id="{{prods.id}}">
+											<img src="{{prods.path}}" />
+											<p class="outerdoor-item">{{prods.tit4}}</p>
+											<p class="outerdoor-name">{{prods.title}}</p>
+											<p class="outerdoor-price">{{prods.price}}</p>
+										</a>
+									</li>
+									{{/if}} 
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						<!--滚动播放区域-->
+						<div id="outerdoor-scroll" class="logo-scroll-s w_full">
+							<div class="box">
+								<ul class="list">
+									{{each childrens[3].scroolImg as scroolImgs}}
+									<li>
+										<a href="list.html" class="ver_middle"><img src="{{scroolImgs}}" /></a>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+							<!--左右滑动按钮-->
+							<a href="javascript:;" class="prev logoScroll-res"></a>
+							<a href="javascript:;" class="next logoScroll-res"></a>
+						</div>
+					</div>
+				</script>
+				</div>
+			</div>
+
+			<!--尾部-->
+			<div class="footer"></div>
+		</div>
+		
+		
+		
+	<ul id="LoutiNav" class="Left l-visiable radius_r_10">
+	    <li index="0"><a href="javascript:;">限时秒杀</a></li>   
+	    <li index="1"><a href="javascript:;">专柜精选</a></li>    
+	    <li index="2"><a href="javascript:;">国际奢品</a></li>    
+	    <li index="3"><a href="javascript:;">跨境优品</a></li>    
+	    <li index="4"><a href="javascript:;">运动户外</a></li>    
+	    <li index="5"><a href="javascript:;">潮流女装</a></li>    
+	    <li index="6"><a href="javascript:;">精选男装</a></li>   
+	    <li index="7"><a href="javascript:;">潮流鞋靴</a></li>   
+	    <li index="8"><a href="javascript:;">时尚箱包</a></li>   
+	    <li index="9"><a href="javascript:;">精选内衣</a></li>    
+	    <li index="10"><a href="javascript:;">可爱童装</a></li>
+	</ul>
+	
+	<!--右侧导航分页-->
+	<div class="rightNav"></div>
+	
+	<script type="text/javascript">
+		$(function(){
+			var flag = true;
+			//滚动事件的处理程序
+			function scroll(){
+				//获取滚动条滚动的距离
+				var scrollTop = $(window).scrollTop();
+				//判断，让左边的楼层显示出来
+				scrollTop > 650 ? $("#LoutiNav").css({left:0}) : $("#LoutiNav").css({left:-80});
+				//滚动条滚动到相应区域时，对应楼层添加class->active
+				$(".floor").each(function(){  
+					//当内容区域显示一半时，开始添加类
+					if(scrollTop > $(this).offset().top - $(this).outerHeight()/2){
+						$("#LoutiNav li").eq($(this).index(".floor")).addClass("active").siblings().removeClass("active");
+					}
+				})
+			}	
+			$(window).scroll(function(){
+				if(flag){
+					scroll();
+				}
+				
+			});					
+			$("#LoutiNav li").click(function(){
+				flag = false;
+				$(this).addClass("active").siblings().removeClass("active");
+				//窗口滚动条动画，滚动到楼层对应区域的位置
+				$("body,html").stop().animate({"scrollTop":$(".floor").eq($(this).index()).offset().top},500,function(){
+					flag  = true;
+				});				
+			})
+		})
+	</script>
+	
+	
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

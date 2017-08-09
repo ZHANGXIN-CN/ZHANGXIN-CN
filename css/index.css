@@ -1,0 +1,762 @@
+@charset "UTF-8";
+body,
+html {
+  height: 3000px; }
+
+/*主体*/
+#main {
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  width: 100%; }
+  #main a:hover {
+    color: #f34; }
+  #main #banner {
+    height: 460px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+    #main #banner .sliderList ul {
+      position: relative;
+      width: 1200px;
+      height: 460px;
+      margin: auto;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #fff; }
+      #main #banner .sliderList ul li {
+        width: 1200px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden; }
+        #main #banner .sliderList ul li a {
+          display: block;
+          width: 1200px;
+          height: 460px;
+          margin: auto; }
+          #main #banner .sliderList ul li a img {
+            display: block;
+            width: 990px;
+            height: 460px;
+            margin-left: 210px; }
+    #main #banner .nav_num {
+      top: 422px;
+      left: 50%;
+      right: 50%;
+      margin: 0 auto 0 100px;
+      position: absolute;
+      height: 21px;
+      width: 100px;
+      text-align: center;
+      overflow: hidden;
+      zoom: 1; }
+      #main #banner .nav_num span {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        margin: 0 5px;
+        outline: 0;
+        float: left;
+        background-color: #f5f5f5;
+        line-height: 20px;
+        font-size: 14px;
+        font-style: normal;
+        color: #000;
+        font-family: "黑体","Hiragino Sans GB";
+        cursor: pointer; }
+      #main #banner .nav_num .current {
+        background-color: #FFFFFF;
+        color: red; }
+    #main #banner .sliderBtns {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      height: 74px;
+      left: 50%;
+      right: 50%;
+      margin: auto;
+      background: url("../images/focus_btn.png") no-repeat;
+      cursor: pointer; }
+    #main #banner .prev {
+      margin-left: -370px;
+      background-position: 0 -74px; }
+    #main #banner .next {
+      margin-right: -600px;
+      background-position: -40px -74px; }
+  #main .searchFix {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    z-index: 10; }
+  #main .discount {
+    overflow: hidden;
+    width: 100%; }
+    #main .discount .dist-cont {
+      margin-top: 13px; }
+      #main .discount .dist-cont ul {
+        width: 1212px;
+        margin-left: -13px; }
+        #main .discount .dist-cont ul li {
+          width: 290px;
+          height: 160px;
+          overflow: hidden;
+          float: left;
+          display: inline-block;
+          margin-left: 13px; }
+          #main .discount .dist-cont ul li img {
+            display: block;
+            width: 100%;
+            -webkit-border-radius: 10px;
+            border-radius: 10px; }
+  #main .Seckill {
+    transition: transform ease 0.5s,opacity ease 0.5s,-webkit-transform ease 0.5s;
+    overflow: hidden; }
+    #main .Seckill > .tit {
+      font-size: 24px;
+      font-family: "黑体","Hiragino Sans GB";
+      line-height: 75px;
+      height: 75px; }
+      #main .Seckill > .tit span {
+        font-size: 18px;
+        margin-left: 10px; }
+    #main .Seckill .seckill-cont {
+      background: #fff;
+      border-radius: 10px; }
+      #main .Seckill .seckill-cont .countdown {
+        font-size: 20px;
+        color: #c81417;
+        line-height: 70px;
+        height: 70px; }
+        #main .Seckill .seckill-cont .countdown em {
+          margin: 0 20px; }
+        #main .Seckill .seckill-cont .countdown .time-item {
+          display: inline-block; }
+          #main .Seckill .seckill-cont .countdown .time-item span.hour_num,
+          #main .Seckill .seckill-cont .countdown .time-item span.min_num,
+          #main .Seckill .seckill-cont .countdown .time-item span.sec_num {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            border-radius: 5px;
+            background: #C81417;
+            color: #fff;
+            text-align: center;
+            line-height: 35px;
+            font-size: 24px;
+            font-family: Arial;
+            margin: 0 4px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); }
+      #main .Seckill .seckill-cont .count {
+        width: 100%;
+        height: 440px;
+        overflow: hidden;
+        position: relative; }
+        #main .Seckill .seckill-cont .count .bImg {
+          width: 270px;
+          height: 440px;
+          overflow: hidden;
+          border-radius: 10px 0 0 10px;
+          transform-style: preserve-3d; }
+          #main .Seckill .seckill-cont .count .bImg a {
+            width: 270px;
+            height: 440px;
+            overflow: hidden;
+            position: relative; }
+            #main .Seckill .seckill-cont .count .bImg a img {
+              display: inline;
+              width: 100%;
+              transition: all ease 0.5s; }
+        #main .Seckill .seckill-cont .count .seckill-scroll {
+          width: 930px;
+          height: 440px;
+          position: relative; }
+          #main .Seckill .seckill-cont .count .seckill-scroll .seckBox {
+            width: 930px;
+            position: relative;
+            overflow: hidden; }
+            #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList {
+              width: 9999px; }
+              #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList li {
+                float: left;
+                display: inline-block;
+                border-left: 1px solid #f5f5f5;
+                width: 232px;
+                height: 440px;
+                text-align: center;
+                overflow: hidden;
+                box-sizing: border-box; }
+                #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList li .picture {
+                  width: 230px;
+                  height: 340px;
+                  overflow: hidden;
+                  display: block;
+                  transform-style: preserve-3d; }
+                  #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList li .picture img {
+                    display: inline;
+                    width: 100%;
+                    transition: all ease 0.5s; }
+                #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList li .title {
+                  width: 80%;
+                  display: block;
+                  line-height: 50px;
+                  height: 50px;
+                  font-size: 17px;
+                  margin: auto;
+                  overflow: hidden;
+                  color: #333;
+                  font-weight: 600; }
+                #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList li .price {
+                  width: 90%;
+                  margin: auto;
+                  font-family: initial; }
+                  #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList li .price span {
+                    color: #c81417;
+                    font-size: 24px; }
+                  #main .Seckill .seckill-cont .count .seckill-scroll .seckBox .seckList li .price del {
+                    color: #999;
+                    text-decoration: line-through;
+                    font-size: 15px;
+                    margin-left: 15px;
+                    margin-right: 1px; }
+          #main .Seckill .seckill-cont .count .seckill-scroll .scroll-btn {
+            background: url("../images/focus_btn.png") no-repeat;
+            width: 40px;
+            height: 74px; }
+          #main .Seckill .seckill-cont .count .seckill-scroll .prev {
+            position: absolute;
+            top: 33%;
+            left: 0;
+            background-position: 0 -74px;
+            cursor: pointer; }
+          #main .Seckill .seckill-cont .count .seckill-scroll .next {
+            position: absolute;
+            top: 33%;
+            right: 0;
+            background-position: -40px -74px;
+            cursor: pointer; }
+  #main .Feature > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Feature > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Feature .feature-cont {
+    overflow: hidden; }
+    #main .Feature .feature-cont .brandNew {
+      width: 1210px;
+      margin-left: -10px;
+      height: 350px; }
+      #main .Feature .feature-cont .brandNew .brandNew-item {
+        width: 232px;
+        height: 350px;
+        overflow: hidden;
+        margin-left: 10px;
+        position: relative;
+        top: 0;
+        left: 0; }
+        #main .Feature .feature-cont .brandNew .brandNew-item a {
+          width: 232px;
+          height: 350px; }
+          #main .Feature .feature-cont .brandNew .brandNew-item a .brandNew-bImg {
+            display: inline;
+            width: 100%; }
+          #main .Feature .feature-cont .brandNew .brandNew-item a .brandNew-logo {
+            width: 120px;
+            height: 70px;
+            overflow: hidden;
+            margin: auto;
+            display: block;
+            position: absolute;
+            background: #fff;
+            top: 260px;
+            left: 56px;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
+          #main .Feature .feature-cont .brandNew .brandNew-item a .brand-shadow {
+            width: 232px;
+            height: 350px;
+            display: block;
+            background: url("../images/feature_shadow.png") no-repeat;
+            position: absolute;
+            top: 350px;
+            left: 0;
+            overflow: hidden;
+            cursor: pointer; }
+            #main .Feature .feature-cont .brandNew .brandNew-item a .brand-shadow p {
+              text-align: center;
+              color: #FFF;
+              font-size: 18px;
+              font-family: "Microsoft YaHei"; }
+            #main .Feature .feature-cont .brandNew .brandNew-item a .brand-shadow .bname {
+              margin-top: 130px;
+              font-size: 32px; }
+      #main .Feature .feature-cont .brandNew .brandNew-item:nth-child(1) {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; }
+      #main .Feature .feature-cont .brandNew .brandNew-item:nth-last-child(1) {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; }
+  #main .floor {
+    transition: transform ease 0.5s,opacity ease 0.5s,-webkit-transform ease 0.5s; }
+    #main .floor .floor-cont .floor-box {
+      width: 1200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px #d4d4d4;
+      overflow: hidden;
+      position: relative;
+      transform: translate3d(0, 0, 0);
+      transform-style: preserve-3d; }
+      #main .floor .floor-cont .floor-box img {
+        transition: all ease 0.5s; }
+        #main .floor .floor-cont .floor-box img:hover {
+          opacity: 0.8; }
+      #main .floor .floor-cont .floor-box .cate {
+        width: 320px;
+        height: 580px;
+        overflow: hidden;
+        position: relative; }
+        #main .floor .floor-cont .floor-box .cate > a {
+          width: 320px;
+          height: 440px;
+          position: relative;
+          overflow: hidden;
+          top: 0;
+          left: 0; }
+        #main .floor .floor-cont .floor-box .cate .cate-cont {
+          height: 175px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%; }
+          #main .floor .floor-cont .floor-box .cate .cate-cont ul {
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 280px;
+            height: 120px;
+            padding: 25px 20px 15px;
+            border-radius: 10px 10px 0 10px;
+            box-shadow: 0 0 10px #757575; }
+          #main .floor .floor-cont .floor-box .cate .cate-cont ul.tr-3 li {
+            width: 47%;
+            line-height: 40px;
+            height: 40px;
+            float: left;
+            display: inline-block;
+            text-align: left; }
+            #main .floor .floor-cont .floor-box .cate .cate-cont ul.tr-3 li a {
+              padding-left: 45px;
+              font-size: 13px; }
+          #main .floor .floor-cont .floor-box .cate .cate-cont .tit {
+            width: 210px;
+            line-height: 35px;
+            height: 35px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -105px;
+            display: block;
+            text-align: center;
+            border-radius: 5px; }
+            #main .floor .floor-cont .floor-box .cate .cate-cont .tit a {
+              color: #fff;
+              font-size: 12px; }
+      #main .floor .floor-cont .floor-box .cate-1 {
+        width: 400px;
+        height: 615px;
+        position: relative;
+        overflow: hidden; }
+        #main .floor .floor-cont .floor-box .cate-1 > a {
+          width: 400px;
+          height: 440px;
+          position: relative;
+          overflow: hidden;
+          top: 0;
+          left: 0; }
+        #main .floor .floor-cont .floor-box .cate-1 .cate-cont {
+          height: 120px;
+          position: absolute;
+          bottom: 80px;
+          left: 0;
+          width: 100%;
+          background: #fff;
+          border-radius: 10px 10px 0 0;
+          box-shadow: 0 0 10px #757575; }
+          #main .floor .floor-cont .floor-box .cate-1 .cate-cont .td-4 {
+            width: 320px;
+            margin: auto;
+            margin-top: 10px; }
+            #main .floor .floor-cont .floor-box .cate-1 .cate-cont .td-4 li {
+              width: 25%;
+              float: left;
+              display: inline-block;
+              line-height: 31px;
+              height: 31px;
+              font-size: 13px; }
+              #main .floor .floor-cont .floor-box .cate-1 .cate-cont .td-4 li a {
+                color: #000; }
+      #main .floor .floor-cont .floor-box .recommond {
+        width: 880px; }
+      #main .floor .floor-cont .floor-box .recommond.recommond-1 .up > ul {
+        width: 882px; }
+        #main .floor .floor-cont .floor-box .recommond.recommond-1 .up > ul li {
+          width: 294px;
+          height: 320px;
+          overflow: hidden;
+          float: left;
+          display: inline-block; }
+          #main .floor .floor-cont .floor-box .recommond.recommond-1 .up > ul li a {
+            width: 294px;
+            height: 320px;
+            overflow: hidden; }
+      #main .floor .floor-cont .floor-box .recommond.recommond-1 .down > ul {
+        overflow: hidden; }
+        #main .floor .floor-cont .floor-box .recommond.recommond-1 .down > ul li {
+          width: 220px;
+          height: 260px;
+          display: block;
+          overflow: hidden;
+          position: relative;
+          transition: all 0.5s ease;
+          float: left;
+          display: inline-block; }
+          #main .floor .floor-cont .floor-box .recommond.recommond-1 .down > ul li a {
+            width: 220px;
+            height: 260px;
+            overflow: hidden;
+            position: relative; }
+            #main .floor .floor-cont .floor-box .recommond.recommond-1 .down > ul li a p {
+              position: absolute;
+              left: 20px;
+              width: 100%;
+              text-align: left;
+              overflow: hidden;
+              font-family: Arial,SimSun; }
+      #main .floor .floor-cont .floor-box .recommond.recommond-2 .hotTop > ul li {
+        height: 290px;
+        width: 290px;
+        overflow: hidden;
+        display: block;
+        position: relative; }
+        #main .floor .floor-cont .floor-box .recommond.recommond-2 .hotTop > ul li a {
+          height: 290px;
+          width: 290px;
+          overflow: hidden; }
+      #main .floor .floor-cont .floor-box .recommond.recommond-2 .up {
+        width: 590px; }
+        #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul {
+          position: relative; }
+          #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li {
+            position: relative;
+            width: 195px;
+            height: 290px;
+            float: left;
+            display: inline-block;
+            border-bottom: 1px solid #f0f0f0;
+            border-left: 1px solid #f0f0f0;
+            overflow: hidden;
+            box-sizing: border-box; }
+            #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li a {
+              width: 195px;
+              height: 290px;
+              position: relative; }
+              #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li a p {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                text-align: center; }
+                #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li a p span {
+                  display: inline-block; }
+                #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li a p span.cross-name {
+                  color: #999;
+                  font-size: 14px;
+                  font-family: SimSun;
+                  margin-right: 14px; }
+                #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li a p span.cross-price {
+                  color: #C81714;
+                  font-size: 14px;
+                  font-family: Arial; }
+              #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li a p.cross-item {
+                top: 24px;
+                font-size: 18px;
+                font-weight: 300;
+                color: #333;
+                font-family: Arial,SimSun; }
+              #main .floor .floor-cont .floor-box .recommond.recommond-2 .up > ul li a p.cross-name-price {
+                top: 56px; }
+      #main .floor .floor-cont .floor-box .recommond.recommond-3 {
+        width: 800px;
+        position: relative; }
+        #main .floor .floor-cont .floor-box .recommond.recommond-3 .up {
+          width: 800px;
+          height: 220px; }
+          #main .floor .floor-cont .floor-box .recommond.recommond-3 .up > ul li {
+            width: 400px;
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            display: inline-block; }
+            #main .floor .floor-cont .floor-box .recommond.recommond-3 .up > ul li a {
+              display: block;
+              width: 400px;
+              height: 220px; }
+        #main .floor .floor-cont .floor-box .recommond.recommond-3 .down {
+          width: 800px;
+          height: 395px;
+          overflow: hidden;
+          margin-left: -1px; }
+          #main .floor .floor-cont .floor-box .recommond.recommond-3 .down > ul {
+            position: relative; }
+            #main .floor .floor-cont .floor-box .recommond.recommond-3 .down > ul li {
+              position: relative;
+              width: 199px;
+              height: 198.5px;
+              float: left;
+              display: inline-block;
+              overflow: hidden;
+              border-bottom: 1px solid #F0F0F0;
+              border-left: 1px solid #F0F0F0;
+              box-sizing: border-box; }
+              #main .floor .floor-cont .floor-box .recommond.recommond-3 .down > ul li a {
+                width: 199px;
+                height: 197.5px; }
+                #main .floor .floor-cont .floor-box .recommond.recommond-3 .down > ul li a p {
+                  width: 100%;
+                  left: 8px;
+                  position: absolute;
+                  font-family: Arial,SimSun;
+                  text-align: left; }
+                #main .floor .floor-cont .floor-box .recommond.recommond-3 .down > ul li a p.outerdoor-item {
+                  top: 4px;
+                  font-size: 15px;
+                  color: #666;
+                  font-weight: 300; }
+                #main .floor .floor-cont .floor-box .recommond.recommond-3 .down > ul li a p.outerdoor-name {
+                  top: 26px;
+                  font-size: 13px;
+                  color: #999;
+                  margin-left: -1px; }
+                #main .floor .floor-cont .floor-box .recommond.recommond-3 .down > ul li a p.outerdoor-price {
+                  color: #c81714;
+                  font-size: 13px;
+                  top: 47px; }
+      #main .floor .floor-cont .floor-box .logo-scroll-s {
+        background: #fff;
+        border-radius: 10px;
+        width: 400px;
+        height: 90px;
+        position: absolute;
+        overflow: hidden;
+        border-top: 1px solid #f5f5f5;
+        box-shadow: 0 0 10px #f5f5f5;
+        bottom: 0;
+        left: 0; }
+        #main .floor .floor-cont .floor-box .logo-scroll-s .box {
+          width: 345px;
+          overflow: hidden;
+          height: 63px;
+          display: block;
+          margin: 15px auto 0;
+          position: relative; }
+          #main .floor .floor-cont .floor-box .logo-scroll-s .box .list {
+            width: 9999px; }
+            #main .floor .floor-cont .floor-box .logo-scroll-s .box .list li {
+              width: 115px;
+              height: 63px;
+              float: left;
+              display: inline-block;
+              overflow: hidden; }
+              #main .floor .floor-cont .floor-box .logo-scroll-s .box .list li a {
+                margin: 0 2px 0 1px;
+                width: 112px;
+                height: 63px;
+                overflow: hidden;
+                display: block; }
+        #main .floor .floor-cont .floor-box .logo-scroll-s .logoScroll-res {
+          background: url(../images/index-logoScroll.png) no-repeat;
+          position: absolute;
+          cursor: pointer;
+          width: 22px;
+          height: 91px;
+          top: 0; }
+        #main .floor .floor-cont .floor-box .logo-scroll-s .prev {
+          background-position: 0 0;
+          left: 0; }
+        #main .floor .floor-cont .floor-box .logo-scroll-s .next {
+          background-position: -45px 0;
+          right: 0; }
+    #main .floor .logo-scroll {
+      background: #fff;
+      border-radius: 10px;
+      width: 100%;
+      height: 90px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 1px 1px 3px #d4d4d4; }
+      #main .floor .logo-scroll .box {
+        width: 1115px;
+        overflow: hidden;
+        height: 50px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        position: relative; }
+        #main .floor .logo-scroll .box .list {
+          width: 9999px; }
+          #main .floor .logo-scroll .box .list li {
+            width: 140px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            overflow: hidden; }
+            #main .floor .logo-scroll .box .list li a {
+              width: 140px;
+              height: 50px;
+              overflow: hidden; }
+      #main .floor .logo-scroll .logoScroll-res {
+        background: url(../images/index-logoScroll.png) no-repeat; }
+      #main .floor .logo-scroll .prev {
+        background-position: 0 0;
+        width: 22px;
+        height: 91px;
+        top: 0;
+        position: absolute;
+        left: 0;
+        cursor: pointer; }
+      #main .floor .logo-scroll .next {
+        background-position: -45px 0;
+        width: 22px;
+        height: 91px;
+        top: 0;
+        position: absolute;
+        right: 0;
+        cursor: pointer; }
+  #main .Luxury > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Luxury > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Luxury p.luxury-title {
+    top: 24px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 300; }
+  #main .Luxury p.luxury-price {
+    top: 49px;
+    font-size: 14px;
+    color: #c81417;
+    left: 22px; }
+  #main .Cross > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Cross > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Outerdoor > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Outerdoor > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Fashion > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Fashion > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Manwear > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Manwear > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Shoe > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Shoe > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Bags > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Bags > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Underwear > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Underwear > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+  #main .Children > .tit {
+    font-size: 24px;
+    font-family: "黑体","Hiragino Sans GB";
+    line-height: 75px;
+    height: 75px; }
+    #main .Children > .tit span {
+      font-size: 18px;
+      margin-left: 10px; }
+
+.radius_r_10 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.Left {
+  width: 80px;
+  background: #fff;
+  position: fixed;
+  left: -80px;
+  bottom: 200px;
+  border: 1px solid #F0F0F0;
+  transition: left ease .5s;
+  z-index: 110; }
+  .Left li {
+    width: 100%;
+    line-height: 40px;
+    height: 40px; }
+    .Left li a {
+      width: 90%;
+      line-height: 39px;
+      height: 39px;
+      display: block;
+      margin: auto;
+      border-bottom: 1px solid #f5f5f5;
+      text-align: center;
+      color: #000; }
+      .Left li a:hover {
+        color: #f34;
+        font-weight: bolder; }
+  .Left li.active a {
+    color: #c81417;
+    font-weight: bolder; }
+
+/*# sourceMappingURL=index.css.map */

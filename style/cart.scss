@@ -1,0 +1,392 @@
+@charset "utf-8";
+/*购物车详情页*/
+
+//购物车头部的logo和搜索
+.i-mgtop{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+    height: 70px;
+    //logo
+    .itop-lg{
+        float: left;
+        width: 220px;
+        height: 68px;
+        a{
+            display: block;
+            width: 220px;
+            height: 68px;
+        }
+    }
+    //gouwuche
+    .itop-br{
+        float: left;
+        img{
+            width: 240px;
+            height: 68px;
+        }
+    }
+    //搜索框
+    .icart-sh{
+        position: absolute;
+        top: 40px;
+        right: 1px;
+        width: 450px;
+        height: 80px;
+        .itop-sh-up{
+            width: 460px;
+            height: 36px;
+            background: url(../images/top-main-search.png) no-repeat;
+            .itop-k{
+                float: left;
+                input.search-value{
+                    width: 368px;
+                    line-height: 30px;
+                    height: 33px;
+                    border: none;
+                    padding-left: 10px;
+                    margin-top: 1px;
+                    margin-left: 2px;
+                    outline: 0;
+                    color: #999;
+                }
+            }
+            .itop-bt{
+                float: right;
+                margin-right: 2px;
+                margin-top: 0;
+                input.search-btn{
+                    font-family: "黑体","Hiragino Sans GB";
+                    font-size: 16px;
+                    color: #fff;
+                    background: 0 0;
+                    width: 65px;
+                    border: none;
+                    cursor: pointer;
+                    height: 35px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+}
+
+
+//头部广告图
+.i-topbanner{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+    display: block;
+    img{
+        display: block;
+    }   
+}
+//购物车主体
+
+.cart-warp {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+//商品清单
+.cart-title {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #d61417;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #d61417;
+    float: left;
+    #listNum{
+        font-family: initial;
+        margin: 0 2px 0 4px;
+    }
+}
+
+//购物车界面标题公用样式
+.cart-ts{
+    height: 44px;
+    background: #F5F5F5 none repeat scroll 0% 0%;
+    border: 1px solid #E6E6E6;
+    span{
+        color: #ff3344;
+        font-weight: bold;
+        line-height: 44px;
+        margin-left: 20px;
+    }
+}
+
+//购物车
+.m-house {
+    padding-bottom: 25px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    overflow: hidden;
+    //购物车为空
+    .cart-none{
+        a{
+            color: #164a96;
+            margin: 0px 10px;
+        }
+    }
+    //热卖推荐的ul
+    ul{
+        li{
+            width: 170px;
+            float: left;
+            margin-left: 25px;
+            margin-top: 23px;
+            position: relative;
+            img{
+                display: block;
+                width: 170px;
+                height: 170px;
+            }
+            .title{
+                margin-top: 10px;
+                height: 50px;
+                color: #333;
+                display: block;
+            }
+            .hot-price{
+                height: 20px;
+                margin-top: 8px;
+                display: block;
+                font-family: initial;
+                span{
+                    color: #ff3344;
+                    margin-right: 10px;
+                    font-weight: bold;
+                    font-size: 13px;
+                }
+                del{
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+
+//购物车有商品时
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+//商品信息
+table.tab-zdcon{
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6; 
+    tbody{
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+        tr{
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+            th{
+                border-bottom: 1px solid #e6e6e6;
+                text-align: center;
+                background: #fafafa;
+                color: #666;
+                font-weight: 500;
+            }
+            td{
+                padding: 1px 0px;
+                text-align: center; 
+                //操作
+                .tabdiv-add,.tabdiv-del{
+                    color: #000;
+                    display: block;
+                    margin: 8px;
+                    &:hover{
+                        color: #ff3344;
+                    }
+                }
+                .tabdiv-del{
+                    margin-left: 35px;
+                }
+            }
+            td.tab-zdcon-line{             
+                //购物车内的商品信息
+                .tb3-con{
+                    overflow: hidden;
+                    margin: 8px 0px; 
+                    .tb3-divtu{
+                        float: left;
+                        margin-left: 10px;
+                        width: 60px;
+                        text-align: center;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    .tb3-divti{
+                        float: left;
+                        margin-left: 10px;
+                        width: 400px;
+                        overflow: hidden;
+                        a{
+                            line-height: 20px;
+                            display: block;
+                            height: 40px;
+                            color: #000;
+                            &:hover{
+                                color: #ff3344;
+                            }
+                        }
+                    }
+                }
+                //数量
+                .cart-num{
+                    margin: 0px 0px;
+                    position: relative;
+                    a,input{
+                        float: left;
+                    }
+                    a{
+                        background: #fafafa;
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        border: 1px solid #eee;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 20px;
+                        color: #000000;
+                    }
+                    input.cartnum-value{
+                        width: 30px;
+                        height: 20px;
+                        border: 1px solid #999;
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                    .cart-numa-tips{
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        color: #FF0000;
+                        display: none;
+                        position: absolute;
+                        z-index: 1000;
+                        padding: 10px 20px;
+                        text-align: center;
+                        top: -62px;
+                        left: -62px;
+                        width: 123px;
+                        height: 32px;
+                        line-height: 32px;
+                        background: #FFFFFF;
+                        i{
+                            border: 10px solid #ddd;
+                            border-color: #ddd transparent transparent  transparent;
+                            position: absolute;
+                            bottom: -20px;
+                            left: 61px;
+                            em {
+                                border: 10px solid #FFFFFF;
+                                border-color:#FFFFFF transparent transparent transparent;
+                                position: absolute;
+                                bottom: -8px;
+                                left: -10px;
+                                z-index: 10;
+                            }
+                        }
+                    }
+                }
+                em{
+                    color: #c81417;
+                    font-weight: bold;
+                    font-size: 13px;
+                }
+            }
+            td.tab-zdcon-add{
+                text-align: left;
+                padding: 0px;
+            }
+        }
+        tr.tab-v31-tr{
+            height: 44px;
+            border-left: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+        }
+        tr.addline{
+            border-top: 1px solid #e6e6e6;
+            font-family: "微软雅黑";
+        }
+    }    
+}
+//结算
+.car-wind{
+    background: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    height: 40px;
+    margin-top: 20px;
+    padding: 25px 0px;
+    .carwinda{
+        float: left;
+        ul{
+            li{
+                float: left;
+                margin-left: 25px;
+                a{
+                    color: #000;
+                    &:hover{
+                        color: #f34;
+                    }
+                }
+            }
+        }
+    }
+    .carwindc{
+       float: right; 
+       ul{
+           li{
+                float: left;
+                text-align: right;
+                margin-right: 40px;
+                font-family: "微软雅黑";
+                .carwindc-1{
+                    font-size: 14px;
+                    color: #666;
+                    font-weight: bold;
+                    em{
+                        color: #ff3344;
+                        font-weight: bolder;
+                        font-size: 16px;
+                    }
+                }
+                .carwindc-2{
+                    margin-top: 5px;
+                    color: #999;
+                    em{
+                        color: #ff7800;
+                        margin: 0px 5px;
+                    }
+                }
+                a{
+                    width: 120px;
+                    height: 45px;
+                    background: #ff3344;
+                    text-align: center;
+                    line-height: 45px;
+                    display: block;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 16px;
+                    &:hover{
+                        background: #c81417;
+                    }
+                }
+           }
+       }
+    }
+}

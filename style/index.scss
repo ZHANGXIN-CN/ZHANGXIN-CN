@@ -1,0 +1,974 @@
+@charset "utf-8";
+body,
+html {
+    height: 3000px;
+}
+/*主体*/
+#main {
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+    width: 100%;
+    a {
+        &:hover {
+            color: #f34;
+        }
+    }
+    //各楼层标题样式
+    @mixin titleStyle {
+        font-size: 24px;
+        font-family: "黑体","Hiragino Sans GB";
+        line-height: 75px;
+        height: 75px;
+        span {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+    }
+
+    //轮播图
+    #banner {
+        height: 460px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        //图片区域
+        .sliderList {
+            ul {
+                position: relative;
+                width: 1200px;
+                height: 460px;
+                margin: auto;
+                border-radius: 12px;
+                overflow: hidden;
+                background-color: #fff;
+                li {
+                    width: 1200px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    overflow: hidden;
+                    a {
+                        display: block;
+                        width: 1200px;
+                        height: 460px;
+                        margin: auto;
+                        img {
+                            display: block;
+                            width: 990px;
+                            height: 460px;
+                            margin-left: 210px;
+                        }
+                    }
+                }
+            }
+        }
+        .nav_num {
+            top: 422px;
+            left: 50%;
+            right: 50%;
+            margin: 0 auto 0 100px;
+            position: absolute;
+            height: 21px;
+            width: 100px;
+            text-align: center;
+            overflow: hidden;
+            zoom: 1;
+            span {
+                display: inline;
+                width: 20px;
+                height: 20px;
+                -webkit-border-radius: 100%;
+                border-radius: 100%;
+                margin: 0 5px;
+                outline: 0;
+                float: left;
+                background-color: #f5f5f5;
+                line-height: 20px;
+                font-size: 14px;
+                font-style: normal;
+                color: #000;
+                font-family: "黑体","Hiragino Sans GB";
+                cursor: pointer;
+            }
+            .current {
+                background-color: #FFFFFF;
+                color: red;
+            }
+        }
+        .sliderBtns {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            height: 74px;
+            left: 50%;
+            right: 50%;
+            margin: auto;
+            background: url("../images/focus_btn.png") no-repeat;
+            cursor: pointer;
+        }
+        .prev {
+            margin-left: -370px;
+            background-position: 0 -74px;
+        }
+        .next {
+            margin-right: -600px;
+            background-position: -40px -74px;
+        }
+    }
+    //搜索悬浮框
+    .searchFix {
+        background: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 48px;
+        z-index: 10;
+    }
+    //置顶4个活动
+    .discount {
+        overflow: hidden;
+        width: 100%;
+        .dist-cont {
+            margin-top: 13px;
+            ul {
+                width: 1212px;
+                margin-left: -13px;
+                li {
+                    width: 290px;
+                    height: 160px;
+                    overflow: hidden;
+                    float: left;
+                    display: inline-block;
+                    margin-left: 13px;
+                    img {
+                        display: block;
+                        width: 100%;
+                        -webkit-border-radius: 10px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+    //限时秒杀
+    .Seckill {
+        transition: transform ease 0.5s,opacity ease 0.5s,-webkit-transform ease 0.5s;
+        overflow: hidden;
+        //标题
+        >.tit {
+            @include titleStyle;
+        }
+        //秒杀内容
+        .seckill-cont {
+            background: #fff;
+            border-radius: 10px;
+            //倒计时
+            .countdown {
+                font-size: 20px;
+                color: #c81417;
+                line-height: 70px;
+                height: 70px;
+                em {
+                    margin: 0 20px;
+                }
+                .time-item {
+                    display: inline-block;
+                    span.hour_num,
+                    span.min_num,
+                    span.sec_num {
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background: #C81417;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 35px;
+                        font-size: 24px;
+                        font-family: Arial;
+                        margin: 0 4px;
+                        box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+                    }
+                }
+            }
+            //产品内容
+            .count {
+                width: 100%;
+                height: 440px;
+                overflow: hidden;
+                position: relative;
+                .bImg {
+                    width: 270px;
+                    height: 440px;
+                    overflow: hidden;
+                    border-radius: 10px 0 0 10px;
+                    transform-style: preserve-3d;
+                    a {
+                        width: 270px;
+                        height: 440px;
+                        overflow: hidden;
+                        position: relative;
+                        img {
+                            display: inline;
+                            width: 100%;
+                            transition: all ease 0.5s;
+                        }
+                    }
+                }
+                //产品展示的主体部分
+                .seckill-scroll {
+                    width: 930px;
+                    height: 440px;
+                    position: relative;
+                    //商品列表
+                    .seckBox {
+                        width: 930px;
+                        position: relative;
+                        overflow: hidden;
+                        .seckList {
+                            width: 9999px;
+                            li {
+                                float: left;
+                                display: inline-block;
+                                border-left: 1px solid #f5f5f5;
+                                width: 232px;
+                                height: 440px;
+                                text-align: center;
+                                overflow: hidden;
+                                box-sizing: border-box;
+                                //图片
+                                .picture {
+                                    width: 230px;
+                                    height: 340px;
+                                    overflow: hidden;
+                                    display: block;
+                                    transform-style: preserve-3d;
+                                    img {
+                                        display: inline;
+                                        width: 100%;
+                                        transition: all ease 0.5s;
+                                    }
+                                }
+                                //标题
+                                .title {
+                                    width: 80%;
+                                    display: block;
+                                    line-height: 50px;
+                                    height: 50px;
+                                    font-size: 17px;
+                                    margin: auto;
+                                    overflow: hidden;
+                                    color: #333;
+                                    font-weight: 600;
+                                }
+                                //价格
+                                .price {
+                                    width: 90%;
+                                    margin: auto;
+                                    font-family: initial;
+                                    span {
+                                        color: #c81417;
+                                        font-size: 24px;
+
+                                    }
+                                    del {
+                                        color: #999;
+                                        text-decoration: line-through;
+                                        font-size: 15px;
+                                        margin-left: 15px;
+                                        margin-right: 1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //左右按钮
+                    .scroll-btn {
+                        background: url("../images/focus_btn.png") no-repeat;
+                        width: 40px;
+                        height: 74px;
+                    }
+                    .prev {
+                        position: absolute;
+                        top: 33%;
+                        left: 0;
+                        background-position: 0 -74px;
+                        cursor: pointer;
+                    }
+                    .next {
+                        position: absolute;
+                        top: 33%;
+                        right: 0;
+                        background-position: -40px -74px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+
+    //专柜精选
+    .Feature {
+        >.tit {
+            @include titleStyle;
+        }
+        .feature-cont {
+            overflow: hidden;
+            .brandNew {
+                width: 1210px;
+                margin-left: -10px;
+                height: 350px;
+                //最新商品列表
+                .brandNew-item {
+                    width: 232px;
+                    height: 350px;
+                    overflow: hidden;
+                    margin-left: 10px;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    a {
+                        width: 232px;
+                        height: 350px;
+                        //图片展示
+                        .brandNew-bImg {
+                            display: inline;
+                            width: 100%;
+                        }
+                        .brandNew-logo {
+                            width: 120px;
+                            height: 70px;
+                            overflow: hidden;
+                            margin: auto;
+                            display: block;
+                            position: absolute;
+                            background: #fff;
+                            top: 260px;
+                            left: 56px;
+                            border-radius: 6px;
+                            box-shadow: 0 0 8px rgba(0,0,0,.3);
+                        }
+                        //蒙层
+                        .brand-shadow {
+                            width: 232px;
+                            height: 350px;
+                            display: block;
+                            background: url("../images/feature_shadow.png") no-repeat;
+                            position: absolute;
+                            top: 350px;
+                            left: 0;
+                            overflow: hidden;
+                            cursor: pointer;
+                            p {
+                                text-align: center;
+                                color: #FFF;
+                                font-size: 18px;
+                                font-family: "Microsoft YaHei";
+                            }
+                            .bname {
+                                margin-top: 130px;
+                                font-size: 32px;
+                            }
+                        }
+                    }
+                }
+                .brandNew-item:nth-child(1) {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+                .brandNew-item:nth-last-child(1) {
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+
+    }
+
+    //楼层的共同样式
+    .floor {
+        transition: transform ease 0.5s,opacity ease 0.5s,-webkit-transform ease 0.5s;
+        .floor-cont {
+            .floor-box {
+                width: 1200px;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 1px 1px 3px #d4d4d4;
+                overflow: hidden;
+                position: relative;
+                transform: translate3d(0,0,0);
+                transform-style: preserve-3d;
+                img {
+                    transition: all ease 0.5s;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+                
+                //左边模块大图+文字
+                .cate {
+                    width: 320px;
+                    height: 580px;
+                    overflow: hidden;
+                    position: relative;
+                    > a {
+                        width: 320px;
+                        height: 440px;
+                        position: relative;
+                        overflow: hidden;
+                        top: 0;
+                        left: 0;
+                    }
+                    .cate-cont {
+                        height: 175px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        ul{
+                            background: #fff;
+                            position: absolute;
+                            bottom: 0;
+                            width: 280px;
+                            height: 120px;
+                            padding: 25px 20px 15px;
+                            border-radius: 10px 10px 0 10px;
+                            box-shadow: 0 0 10px #757575;
+                        }
+                        ul.tr-3 li{
+                            width: 47%;
+                            line-height: 40px;
+                            height: 40px;
+                            float: left;
+                            display: inline-block;
+                            text-align: left;
+                            a {
+                                padding-left: 45px;
+                                font-size: 13px;
+                            }
+                        }
+                        .tit {
+                            width: 210px;
+                            line-height: 35px;
+                            height: 35px;
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            margin-left: -105px;
+                            display: block;
+                            text-align: center;
+                            border-radius: 5px;
+                            a {
+                                color: #fff;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                //4-9左边大图+文字
+                .cate-1{
+                    width: 400px;
+                    height: 615px;
+                    position: relative;
+                    overflow: hidden;
+                    >a{
+                        width: 400px;
+                        height: 440px;
+                        position: relative;
+                        overflow: hidden;
+                        top: 0;
+                        left: 0;
+                    }
+                    .cate-cont{
+                        height: 120px;
+                        position: absolute;
+                        bottom: 80px;
+                        left: 0;
+                        width: 100%;
+                        background: #fff;
+                        border-radius: 10px 10px 0 0;
+                        box-shadow: 0 0 10px #757575;
+                        .td-4{
+                            width: 320px;
+                            margin: auto;
+                            margin-top: 10px;
+                            li{
+                                width: 25%;
+                                float: left;
+                                display: inline-block;
+                                line-height: 31px;
+                                height: 31px;
+                                font-size: 13px;
+                                a{
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                //右边模块
+                .recommond {
+                    width: 880px;
+                }
+                .recommond.recommond-1 {
+                    //上半部分
+                    .up {
+                        > ul {
+                            width: 882px;
+                            li {
+                                width: 294px;
+                                height: 320px;
+                                overflow: hidden;
+                                float: left;
+                                display: inline-block;
+                                a {
+                                    width: 294px;
+                                    height: 320px;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                    //下半部分 
+                    .down {
+                        > ul {
+                            overflow: hidden;
+                            li {
+                                width: 220px;
+                                height: 260px;
+                                display: block;
+                                overflow: hidden;
+                                position: relative;
+                                transition: all 0.5s ease;
+                                float: left;
+                                display: inline-block;
+                                a {
+                                    width: 220px;
+                                    height: 260px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    p {
+                                        position: absolute;
+                                        left: 20px;
+                                        width: 100%;
+                                        text-align: left;
+                                        overflow: hidden;
+                                        font-family: Arial,SimSun;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .recommond.recommond-2{
+                    .hotTop>ul li{
+                        height: 290px;
+                        width: 290px;
+                        overflow: hidden;
+                        display: block;
+                        position: relative;
+                        a{
+                            height: 290px;
+                            width: 290px;
+                            overflow: hidden;
+                        }
+                    }
+                    .up{
+                        width: 590px;
+                        >ul{
+                            position: relative;
+                            li{
+                                position: relative;
+                                width: 195px;
+                                height: 290px;
+                                float: left;
+                                display: inline-block;
+                                border-bottom: 1px solid #f0f0f0;
+                                border-left: 1px solid #f0f0f0;
+                                overflow: hidden;
+                                box-sizing: border-box;
+                                a{
+                                    width: 195px;
+                                    height: 290px;
+                                    position: relative;
+                                    p{
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        text-align: center;
+                                        span{
+                                            display: inline-block;
+                                        }
+                                        span.cross-name{
+                                            color: #999;
+                                            font-size: 14px;
+                                            font-family: SimSun;
+                                            margin-right: 14px;
+                                        }
+                                        span.cross-price{
+                                            color: #C81714;
+                                            font-size: 14px;
+                                            font-family: Arial;
+                                        }
+                                    }
+                                    p.cross-item{
+                                        top: 24px;
+                                        font-size: 18px;
+                                        font-weight: 300;
+                                        color: #333;
+                                        font-family: Arial,SimSun;
+                                    }
+                                    p.cross-name-price{
+                                        top: 56px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //4-9楼层的推荐商品
+                .recommond.recommond-3{
+                    width: 800px;
+                    position: relative;
+                    .up{
+                        width: 800px;
+                        height: 220px;  
+                        >ul{
+                           li{
+                                width: 400px;
+                                height: 220px;
+                                position: relative;
+                                overflow: hidden;
+                                float: left;
+                                display: inline-block;
+                                a{
+                                    display: block;
+                                    width: 400px;
+                                    height: 220px;
+                                }
+                            } 
+                        } 
+                           
+                    }
+                    .down{
+                        width: 800px;
+                        height: 395px;
+                        overflow: hidden;
+                        margin-left: -1px;
+                        >ul{
+                            position: relative;
+                            li{
+                                position: relative;
+                                width: 199px;
+                                height: 198.5px;
+                                float: left;
+                                display: inline-block;
+                                overflow: hidden;
+                                border-bottom: 1px solid #F0F0F0;
+                                border-left: 1px solid #F0F0F0;
+                                box-sizing: border-box;
+                                a{
+                                    width: 199px;
+                                    height: 197.5px;
+                                    p{
+                                        width: 100%;
+                                        left: 8px;
+                                        position: absolute;
+                                        font-family: Arial,SimSun;
+                                        text-align: left;
+                                    }
+                                    p.outerdoor-item{
+                                        top: 4px;
+                                        font-size: 15px;
+                                        color: #666;
+                                        font-weight: 300;
+                                    }
+                                    p.outerdoor-name{
+                                        top: 26px;
+                                        font-size: 13px;
+                                        color: #999;
+                                        margin-left: -1px;
+                                    }
+                                    p.outerdoor-price{
+                                        color: #c81714;
+                                        font-size: 13px;
+                                        top: 47px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //4-9楼层的滚动播放演示
+                .logo-scroll-s{
+                    background: #fff;
+                    border-radius: 10px;
+                    width: 400px;
+                    height: 90px;
+                    position: absolute;
+                    overflow: hidden;
+                    border-top: 1px solid #f5f5f5;
+                    box-shadow: 0 0 10px #f5f5f5;
+                    bottom: 0;
+                    left: 0;
+                    .box{
+                        width: 345px;
+                        overflow: hidden;
+                        height: 63px;
+                        display: block;
+                        margin: 15px auto 0;
+                        position: relative;
+                        .list{
+                            width: 9999px;
+                            li{
+                                width: 115px;
+                                height: 63px;
+                                float: left;
+                                display: inline-block;
+                                overflow: hidden;
+                                a{
+                                    margin: 0 2px 0 1px;
+                                    width: 112px;
+                                    height: 63px;
+                                    overflow: hidden;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .logoScroll-res{
+                        background: url(../images/index-logoScroll.png) no-repeat;
+                        position: absolute;
+                        cursor: pointer;
+                        width: 22px;
+                        height: 91px;
+                        top: 0;
+                    }
+                    .prev{
+                        background-position: 0 0;
+                        left: 0;
+                    }
+                    .next{
+                        background-position: -45px 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        //产品滚动区域
+        .logo-scroll{
+            background: #fff;
+            border-radius: 10px;
+            width: 100%;
+            height: 90px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 1px 1px 3px #d4d4d4;
+            .box{
+                width: 1115px;
+                overflow: hidden;
+                height: 50px;
+                display: block;
+                margin: auto;
+                margin-top: 20px;
+                position: relative;  
+                .list{
+                    width: 9999px;
+                    li{
+                        width: 140px;
+                        height: 50px;
+                        float: left;
+                        display: inline-block;
+                        overflow: hidden;
+                        a{
+                            width: 140px;
+                            height: 50px;
+                            overflow: hidden;
+                        }
+                    }
+                }   
+            }
+            .logoScroll-res{
+                background: url(../images/index-logoScroll.png) no-repeat;
+            }
+            //左边滑动按钮
+            .prev{
+                background-position: 0 0;
+                width: 22px;
+                height: 91px;
+                top: 0;
+                position: absolute;
+                left: 0;
+                cursor: pointer;
+            }
+            //右边滑动按钮
+            .next{
+                background-position: -45px 0;
+                width: 22px;
+                height: 91px;
+                top: 0;
+                position: absolute;
+                right: 0;
+                cursor: pointer;
+            }
+        }
+    }
+
+    //国际奢品
+    .Luxury {
+        >.tit {
+            @include titleStyle;
+        }
+        p.luxury-title {
+            top: 24px;
+            color: #666;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        p.luxury-price {
+            top: 49px;
+            font-size: 14px;
+            color: #c81417;
+            left: 22px;
+        }
+    }
+
+    //跨境优品
+    .Cross {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+
+    //户外运动
+    .Outerdoor {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+
+    //潮流女装
+    .Fashion {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+
+    //精选男装
+    .Manwear {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+
+    //潮流鞋靴
+    .Shoe {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+
+    //时尚箱包
+    .Bags {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+
+    //精选内衣
+    .Underwear {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+
+    //可爱童装
+    .Children {
+        >.tit {
+            @include titleStyle;
+        }
+    }
+    
+
+}
+
+
+
+//左侧楼梯效果
+.radius_r_10{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Left{
+    width: 80px;
+    background: #fff;
+    position: fixed;
+    left: -80px;
+    bottom: 200px;
+    border: 1px solid #F0F0F0;
+    transition: left ease .5s;
+    z-index: 110;
+    li{
+        width: 100%;
+        line-height: 40px;
+        height: 40px;
+        a{
+            width: 90%;
+            line-height: 39px;
+            height: 39px;
+            display: block;
+            margin: auto;
+            border-bottom: 1px solid #f5f5f5;
+            text-align: center;
+            color: #000;
+            &:hover{
+                color: #f34;
+                font-weight: bolder;
+            }
+        }
+        
+    }
+    li.active{
+        a{
+            color: #c81417;
+            font-weight: bolder;
+        }   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

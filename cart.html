@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>奥莱购-购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部分页-->
+		<div class="top"></div>
+		<!--头部log 搜索栏 start-->
+		<div class="i-mgtop clear">
+			<div class="itop-lg">
+				<a href="index.html" target="_blank" class="logo fl"><img src="images/logo.png" /></a>
+			</div>
+			<div class="itop-br">
+				<a href="javascript:;"><img src="images/cart-ft.jpg" /></a>
+			</div>
+			<!--搜索框-->
+			<div class="icart-sh">
+				<div class="itop-sh-up">
+					<div class="itop-k">
+						<input class="search-value" type="text" id="key" value="U.S POLO ASSN." onfocus="if (value =='U.S POLO ASSN.'){value ='';};" onblur="if (value ==''){value='U.S POLO ASSN.';};" maxlength="100" mplaceholder="请输入您想寻找的商品名称">
+					</div>
+					<div class="itop-bt">
+						<input class="search-btn" onclick="javascript: search('key'); return false;" value="搜索" type="button">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--头部广告图-->
+		<div class="i-topbanner">
+			<a href="javascript:;"><img src="images/Cggk608.jpg" /></a>
+		</div>
+
+		<!--商品清单标题-->
+		<div id="cartTop" class="cart-warp" style="overflow: hidden; display: none;">
+			<div class="cart-title">商品清单(<span id="listNum">0</span>)</div>
+		</div>
+		<!--购物车主体-->
+		<div id="cart-null" class="cart-warp" style="display: none;">
+			<!--购物车标题------没有商品时---------------------------------------------------->
+			<div class="cart-ts">
+				<span>购物车</span>
+			</div>
+			<div class="m-house">
+				<!--购物车没有商品时-->
+				<div class="cart-none" style="text-align: center;">
+					<img src="images/car-b.png" /> 购物车内暂时没有商品,去
+					<a href="index.html" target="_blank">首页</a>挑选喜欢的商品
+				</div>
+			</div>
+		</div>
+		<!--有商品时-->
+		<div id="cart-exist" class="cart-warp">
+			<!--商品信息-->
+			<table class="tab-zdcon ">
+				<tbody>
+					<!--标题-->
+					<tr class="tab-v31-tr " style="border-top:1px solid #e6e6e6; ">
+						<th width="60 ">全选</th>
+						<th width="540 ">订单商品</th>
+						<th width="120 ">单价</th>
+						<th width="120 ">数量</th>
+						<th width="120 ">优惠</th>
+						<th width="120 ">小计</th>
+						<th width="120 ">操作</th>
+					</tr>
+					<!--购物车具体信息-->
+					<script id="list-cart" type="text/html">
+						{{each proInfor as item}}
+					<tr class="addline">
+						<!--全选-->
+						<td class="tab-zdcon-line">
+							<input type="checkbox"class="add-value" data-id="{{item.id}}" checked="checked" />
+						</td>
+						<!--商品信息-->
+						<td class="tab-zdcon-add tab-zdcon-line">
+							<div class="tb3-con">
+								<div class="tb3-divtu">
+									<a href="detail.html?id={{item.id}}"><img src="{{item.smallImg[0]}}"/></a>
+								</div>
+								<div class="tb3-divti">
+									<a href="detail.html?id={{item.id}}">{{item.tit4}}{{item.title}}</a>
+								</div>
+							</div>
+						</td>
+						<!--单价-->
+						<td class="tab-zdcon-line">{{item.price}}</td>
+						<!--数量-->
+						<td class="tab-zdcon-line">
+							<div class="cart-num">
+								<a href="javascript:;" class="cart-numa cartReduce" data-id="{{item.id}}">-</a>
+								<input type="txt" class="cartnum-value" value="{{item.num}}" data-id="{{item.id}}"/>
+								<a href="javascript:;" class="cart-numa cartAdd" data-id="{{item.id}}">+</a>
+								<div class="cart-numa-tips">商品数量不能小于1<i><em></em></i></div>
+							</div>
+						</td>
+						<!--优惠-->
+						<td class="tab-zdcon-line">
+							<p style="color: #ff7800;">¥0.00</p>
+						</td>
+						<!--小计-->
+						<td class="tab-zdcon-line subtotal" data-id="{{item.id}}">
+							<em></em>
+						</td>
+						<!--操作-->
+						<td>
+							<a href="javascript:;" class="tabdiv-add" data-id="{{item.id}}">移入收藏夹</a>
+							<a href="javascript:;" class="tabdiv-del" data-id="{{item.id}}">删除</a>
+						</td>
+					</tr>
+					{{/each}}
+					</script>
+				</tbody>
+			</table>		
+		
+			<!--结算-->
+			<div class="car-wind clear">
+				<div class="carwinda">
+					<ul>
+						<li>
+							<input class="add-value" value="" id="CheckAll" type="checkbox" checked="checked">
+						</li>
+						<li>
+							<a href="javascript:;">全选</a>
+						</li>
+						<li>
+							<a href="javascript:;" id="btn-deleteAll">删除</a>
+						</li>
+						<li>
+							<a href="javascript:;" id="btn-collect">移入收藏夹</a>
+						</li>
+					</ul>
+				</div>
+				<div class="carwindc">
+					<ul>
+						<li>
+							<div class="carwindc-1">
+								总计：<em>¥96.00</em>								
+							</div>
+							<div class="carwindc-2">
+								商品<em class="carwindc-2-total">2</em>件&nbsp;&nbsp;赠品<em>0</em>件
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;" id="btnToOrder">去结算</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+		<!--热卖推荐-->
+		<div class="cart-warp">
+			<div class="cart-ts">
+				<span>热卖推荐</span>
+			</div>
+			<div class="m-house" id="hot-ranks" style="position: relative;">
+				<ul>
+					<script id="list-hot" type="text/html">
+						{{each hotsales as hotsale}}
+						<li>
+							<a href="detail.html?id={{hotsale.id}}" target="_blank">
+								<img src="{{hotsale.path}}"/>
+								<span class="title">{{hotsale.tit4}}{{hotsale.title}}</span>
+								<p class="hot-price">
+									<span>{{hotsale.price}}</span>
+									<del>{{hotsale.del}}</del>
+								</p>
+							</a>
+						</li>
+						{{/each}}
+					</script>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--尾部-->
+		<div class="footer"></div>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>奥莱购购物详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/magnifier.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部分页-->
+		<div class="top"></div>
+		<!--logo&search分页-->
+		<header class="header"></header>
+		<!--百度接口拼接-->
+		<script type="text/javascript">
+			function data1(data){
+				data = data.s;
+				var html = "";
+				for(var i in data){
+					html+="<li><a href='https://www.baidu.com/s?wd="+data[i]+"'>"+data[i]+"</a></li>";
+				}
+				$("#sechList").html(html).show();
+			}	
+		</script>
+		<!--nav分页-->
+		<nav class="navpag w_full"></nav>
+		<div class="detail-main">
+			<script id="list-main" type="text/html">	
+		<!--商品详情-进度标-->	
+		<div class="pt-warp">
+		    <div class="breadcrumb">
+		        <dl>	        	
+		            <dt><span class="i-core"></span><a href="index.html">奥莱商城</a></dt>
+		            <dd>〉</dd>
+		            <dd><a href="javascripts:;">{{tit1}}</a></dd>            	
+		            <dd>〉</dd>          	 	
+		            <dd><a href="javascripts:;">{{tit2}}</a></dd>		           
+		            <dd>〉</dd>	             	
+		            <dd><a href="javascripts:;">{{tit3}}</a></dd>	            	
+		            <dd>〉</dd>             	
+		            <dd><a href="javascripts:;">{{tit4}}</a></dd>	            
+		            <dd>〉</dd>             	
+		            <dd><a href="javascripts:;">{{title}}</a></dd>		           	
+		        </dl>
+		    </div>
+		</div>
+		<!--商品明细数据-->
+		<div class="pt-warp">
+			<div class="pt-data clear">
+				<!--数据左侧start-->
+				<div class="pt-data-lt">
+					<!--左侧小图-->
+					<div class="pt-data-lt-1">
+						<i class="data-ltli-top i-core"></i>
+						<div class="jqzoomDiv">
+							<ul style="position: absolute;height: 280px;">
+								{{each smallImg as sImgs}}
+								<li class="zoom-navitem" data-src="{{sImgs}}"><img src="{{sImgs}}"/></li>
+								{{/each}}
+							</ul>
+						</div>
+						<i class="data-ltli-bottom i-core"></i>
+					</div>
+					<!--左侧中图-->
+					<div class="pt-data-lt-2 jqzoom">
+						<!--放大镜模块zoomPad-->
+						<div class="zoomPad">
+							<!--中图-->
+							<img src="{{bigImg[0]}}" style="opacity: 1;"/>
+							<!--放大镜zoomPup-->
+							<div class="zoomPup"></div>
+							<!--放大镜的窗口zoomWindow-->
+							<div class="zoomWindow">		
+									<img src="{{zoomImg[0]}}"/>
+							</div>
+						</div>
+					</div>
+					<!--清除浮动的隔层-->
+					<div style="clear: both;"></div>
+					<!--分享-->
+					<div class="pt-share">
+						<ul>
+							<li>
+								<i class="pt-share-icon pt-share1 pt-core"></i>
+								<a href="javascript:;">正品保障</a>
+							</li>
+							<li>
+								<i class="pt-share-icon pt-share2 pt-core"></i>
+								<a href="javascript:;">天天低价</a>
+							</li>
+							<li>
+								<i class="pt-share-icon pt-share3 pt-core"></i>
+								<a href="javascript:;">分享</a>
+							</li>
+							<li>
+								<i class="pt-share-icon pt-share4 pt-core"></i>
+								<a href="javascript:;">收藏商品</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--数据左侧end-->
+				<!--数据中间start-->
+				<div class="pt-data-me">
+					<!--商品标题-->
+					<div class="data-me-tit" id="productTitle">
+						&nbsp;{{tit4}}&nbsp;{{title}}
+					</div>
+					<!--详细价格区-->
+					<div class="data-pval">
+                        <span>奥 莱 价：</span>
+                        <em id="salePrice">{{price}}</em>
+                        <del>{{del}}</del>
+					</div>
+					<!--促销信息区-->
+					<div class="data-sale">
+						<span>优惠</span>
+						<em>每满99.00元减20.00</em>
+					</div>
+					<!--属性选择区-->
+					<div class="data-attr">
+						<ul>
+							<li class="data-attr1">选择颜色：</li>
+							<li class="data-attr2">
+								{{each color as clr}}
+								<a href="javascript:;" class="ptattr">{{clr}}</a>
+								{{/each}}
+							</li>
+						</ul>
+						<ul>
+							<li class="data-attr1">选择尺码：</li>
+							<li class="data-attr2">
+								{{each size as se}}
+								<a href="javascript:;" class="ptattr">{{se}}</a>
+								{{/each}}
+							</li>
+						</ul>
+					</div>
+					<!--数量 确定区-->
+					<div style="clear: both"></div>
+					<div id="buy-container" class="buy-container">
+						<div class="data-number">
+							<ul>
+								<li class="data-number5">数量选择</li>
+								<li class="data-number2">
+									<div class="pt-nk">
+										<!--商品熟料数值-->
+										<input type="text" id="buyNum" value="1" class="datanub-value">
+									</div>
+									<div class="pt-ns">
+										<a href="javascript:;" class="a-bm buyAdd">+</a>
+										<a href="javascript:;" class="buyReduce">-</a>
+									</div>
+								</li>
+								<!--加入购物车-->
+								<li class="data-number3">
+									<a id="addCart" class="addCart" href="javascript:void(0);">加入购物车</a>
+								</li>
+							</ul>
+						</div>
+						<!--手机扫描购买-->
+						<div class="data-sao">
+							<img src="images/icon_phone.png" class="phone" />
+							<span>手机购买</span>
+							<img src="images/more_unfold.png" class="doArrow" />
+							<div class="dstelma">
+								<img src="images/Cggg305.png" />
+								<p>打开奥莱购app扫一扫</p>
+							</div>
+						</div>
+					</div>
+					<!--奥莱购服务-->
+					<div class="serve">
+						<span>奥莱服务：</span>
+						<em>
+							<span>
+								<i class="icon icon-promise"></i>
+								正品保证
+							</span>
+							<span>
+								<i class="icon icon-delivery"></i>
+								极速配送
+							</span>
+							<span>
+								<i class="icon icon-afterSale"></i>
+								无忧售后
+							</span>
+						</em>
+					</div>
+				</div>
+				<!--数据中间end-->
+				<!--数据右侧start-->
+				<div class="pt-data-rt">
+					<!--标题-->
+					<div class="data-rt-brank">
+						<div class="line"></div>
+						<span>
+							为你推荐
+							<div class="arrow arrow-left"><img src="images/less.png"/></div>
+							<div class="arrow arrow-right"><img src="images/more_unfold.png"/></div>
+						</span>
+					</div>
+					<!--为你推荐-->
+					<div class="data-rt-val">
+						<ul class="goods" id="ulRecommonds">
+							
+						</ul>
+					</div>
+				</div>
+				<!--数据右侧end-->
+			</div>
+		</div>
+		<!--商品明细数据end-->	
+		
+		<!--商品详细介绍start-->
+		<div class="pt-warp" style="margin-top: 20px;">
+			<!--左侧热门推荐start-->
+			<div class="pt-d-left">
+				<div class="pt-d-left-1">
+					<!--标题-->
+					<div class="d-left-tl">
+						热门销售
+						<em>HOT</em>
+						<i class="pt-hot i-core"></i>
+					</div>
+					<!--热门销售列表-->
+					<ul class="d-left-con" id="p-hot-list">
+						
+					</ul>
+				</div>
+			</div>
+			
+			<!--右侧start-->
+			<div class="pt-d-right">
+				<!--切换标题栏-->
+				<div class="tab-tit protab-base submenua" style="width: 998px; position: static; top: 0px; display: block;">
+					<span class="selected"><a href="javascript:;">商品介绍</a></span>
+					<span class=""><a href="javascript:;">售后服务</a></span>
+					<!--悬浮小菜单-->
+					<div class="seaev-t" style="display: none;">
+						<ul>
+							<li class="seaev-t1"><a href="javascript:;">{{tit4}}{{title}}</a></li>
+							<li class="seaev-t2"><a href="javascript:;">加入购物车</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--切换内容-->
+				<div class="tab-content protab-basecon">
+					<!--商品介绍-->
+					<div class="tab-detai">
+						<!--商品文字信息-->
+						<div class="seav-detail">
+							<dl>
+								<dd class="limit">商品名称：{{tit4}}{{title}}</dd>
+								<dd class="limit">SKU编号：20600443014209</dd>
+								<dd class="limit">上架时间：2017/7/6 9:51:59</dd>
+								<dd class="limit">商品毛重：/</dd>
+							</dl>
+							<dl>
+								<dd class="limit">商品编号：{{id}}</dd>
+								<dd class="limit">ERP货号：/</dd>
+							</dl>
+						</div>
+						<!--商品图片展示-->
+						<div class="seav-dtu">
+							<p>
+								<img src="images/CggE238.jpg"/>
+								<img src="images/CggQ271.jpg"/>
+								<img src="images/CggY411.jpg"/>
+							</p>
+						</div>
+					</div>
+					<!--售后服务-->
+					<div class="tab-detai tab-hide">
+						<p>
+							<img src="images/pro-tuihuo.jpg" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--商品详细介绍end-->
+		
+		<!--最近浏览商品start-->
+		<div class="browerDiv">
+			<div class="s-eye">
+				<div class="s-eye-tit">
+					您最近还浏览以下商品：
+				</div>
+				<span class="s-btn" id="prev1"></span>
+				<div class="s-wrap" id="wrap1">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="images/CggM498=200x200.jpg"/>
+								<p class="s-title">韩版小清新荷叶边上衣女露肩短袖雪纺衫</p>
+								<p class="s-price">
+									<span>¥98.00</span>
+									<del>¥480.00</del>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/CggM498=200x200.jpg"/>
+								<p class="s-title">韩版小清新荷叶边上衣女露肩短袖雪纺衫</p>
+								<p class="s-price">
+									<span>¥98.00</span>
+									<del>¥480.00</del>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/CggM498=200x200.jpg"/>
+								<p class="s-title">韩版小清新荷叶边上衣女露肩短袖雪纺衫</p>
+								<p class="s-price">
+									<span>¥98.00</span>
+									<del>¥480.00</del>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/CggM498=200x200.jpg"/>
+								<p class="s-title">韩版小清新荷叶边上衣女露肩短袖雪纺衫</p>
+								<p class="s-price">
+									<span>¥98.00</span>
+									<del>¥480.00</del>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/CggM498=200x200.jpg"/>
+								<p class="s-title">韩版小清新荷叶边上衣女露肩短袖雪纺衫</p>
+								<p class="s-price">
+									<span>¥98.00</span>
+									<del>¥480.00</del>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<span class="s-btn" id="next1"></span>
+			</div>
+		</div>
+		<!--最近浏览商品end-->
+			</script>
+		</div>
+		
+		
+		<!--右侧导航分页-->
+		<div class="rightNav"></div>
+		
+		
+		<!--尾部-->
+		<div class="footer"></div>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

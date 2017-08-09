@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,figure{margin:0;padding:0;}
+a,u,s,del{color:#666;text-decoration:none} 
+li{list-style:none;}
+fieldset,a img,.bor0{border:0;}
+i,em,b{font-style:normal;font-weight:100;}
+img{vertical-align:middle;} 
+table{border-collapse:collapse;}/*细线边框 合并相邻单元格边框-边框合并*/
+.ind2{text-indent:2em}
+input,textarea{outline:none;}/*去除谷歌的input蓝色虚框*/
+textarea{resize:none;}/*禁止多行文本框的拉动*/
+
+body{font:12px  "宋体";color: #333333; word-wrap:break-word;/*英文数字会换行*/}
+
+.over{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}/*单行文本隐藏出现省略号*/
+
+/*垂直居中*/
+.valign{text-align:center;}
+.valign:after{content:"";display:inline-block;vertical-align:middle;width:0;height:100%;}
+.valign img{vertical-align:middle;}
+.v_middle{vertical-align:middle;}
+/*万能清除法*/
+.clear{zoom:1;}
+.clear:before{content:"";display:table;}
+.clear:after{content:"";display:block;clear:both;}
+
+.w_full{width: 100%;}
+.w_1200{width: 1200px;}
+.m_auto{margin: auto;}
+.fl{float: left;display: inline-block;}
+.fr{float: right;display: inline-block;}
+.m_l_20{margin-left: 20px;}
+.m_t_10 {margin-top: 10px;}
+.m_t_20 {margin-top: 20px;}
+.m_t_50 {margin-top: 50px;}
+.p_t_30 { padding-top: 30px;}
+.ver_middle {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    }
+.o_hidden {overflow: hidden;}
+
+
+
+
+
+
+
+
+
+

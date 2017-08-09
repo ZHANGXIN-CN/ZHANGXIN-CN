@@ -1,0 +1,1558 @@
+{
+	"discount": ["images/disc1.png","images/disc2.png","images/disc3.png","images/disc4.png"],
+	"seckill": [
+		{
+			"title": "BALLY 巴利 新品男款",
+			"id": "1",
+			"price": "¥1599.00",
+			"del": "¥3990.00",
+			"tit1": "箱包",
+			"tit2": "男士包",
+			"tit3": "钱包",
+			"tit4": "新人专享",
+			"path": "images/CggNc542.jpg",
+			"smallImg": ["images/Cggc638=60x60.JPG","images/CggY954=60x60.JPG"
+			],
+			"bigImg": ["images/Cggc638=400x400.JPG","images/CggY954=400x400.JPG"
+			],
+			"zoomImg":["images/Cggc638.JPG","images/CggY954.JPG"
+			],
+			"color": ["蓝色"],
+			"size": ["//"]
+		}, {
+			"title": "迈克科尔斯 女款牛皮斜挎包",
+			"id": "2",
+			"price": "¥1890.00",
+			"del": "¥2850.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "斜垮包",
+			"tit4": "MICHAEL KORS",
+			"path": "images/CggU181.jpg",
+			"smallImg": ["images/CggM716=60x60.jpg","images/CggM529=60x60.jpg"
+			],
+			"bigImg": ["images/CggM716=400x400.jpg","images/CggM529=400x400.jpg"
+			],
+			"zoomImg":["images/CggM716.jpg","images/CggM529.jpg"
+			],
+			"color": ["暗红","紫红"],
+			"size": []
+		}, {
+			"title": "芙拉 女款牛皮单肩包",
+			"id": "3",
+			"price": "¥1499.00",
+			"del": "¥2790.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "单肩包",
+			"tit4": "FURLA",
+			"path": "images/Cggc0790.jpg",
+			"smallImg": ["images/Cggo721=60x60.JPG","images/CggE100=60x60.JPG"
+			],
+			"bigImg": ["images/Cggo721=400x400.JPG","images/CggE100=400x400.JPG"
+			],
+			"zoomImg":["images/Cggo721.JPG","images/CggE100.JPG"
+			],
+			"color": ["橙红"],
+			"size": ["//"]
+		}, {
+			"title": "BALLY 巴利 新品男款B字头板扣腰带",
+			"id": "4",
+			"price": "¥1990.00",
+			"del": "¥3100.00",
+			"tit1": "配饰",
+			"tit2": "服饰配件",
+			"tit3": "男士皮带",
+			"tit4": "BALLY",
+			"path": "images/Cggw8891.jpg",
+			"smallImg": ["images/Cggk259=60x60.JPG","images/Cggs0447=60x60.JPG"
+			],
+			"bigImg": ["images/Cggk259=400x400.JPG","images/Cggs0447=400x400.JPG"
+			],
+			"zoomImg":["images/Cggk259.JPG","images/Cggs0447.JPG"
+			],
+			"color": ["红蓝色"],
+			"size": ["90","95","105","110","115"]
+		}
+	],
+	"features":[
+		{
+			"title":"新秀丽",
+			"sale":"32元起",
+			"bNewBImg":"images/CggA058.jpg",
+			"bNewlogo":"images/CggE993.jpg"
+		},{
+			"title":"雅诗兰黛",
+			"sale":"低至7.2折",
+			"bNewBImg":"images/CggM306.jpg",
+			"bNewlogo":"images/Cggs699.jpg"
+		},{
+			"title":"黛安芬",
+			"sale":"低至2.1折",
+			"bNewBImg":"images/Cggk240.jpg",
+			"bNewlogo":"images/Cggc644.jpg"
+		},{
+			"title":"安奈儿",
+			"sale":"低至4折",
+			"bNewBImg":"images/Cggw590.jpg",
+			"bNewlogo":"images/CggU924.jpg"
+		},{
+			"title":"安奈儿",
+			"sale":"低至4折",
+			"bNewBImg":"images/Cggw804.jpg",
+			"bNewlogo":"images/CggB0232.jpg"
+		}
+	],
+	"luxurys":[
+		{
+			"intro": ["女装短袖T恤","女装长袖T恤","女装针织衫","男款短袖T恤","男款长袖T恤","男款针织衫"]
+		},
+		{
+			"leftBImg":"images/Cggw168.jpg"
+		},
+		{
+			"rightImg":["images/Cggg147.png","images/Cggc624.png","images/CggE732.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "男款纯棉套头衫",
+			"id": "5",
+			"price": "¥1190.00",
+			"del":"¥1700.00",
+			"tit1": "男装",
+			"tit2": "男士上装",
+			"tit3": "短袖T恤",
+			"tit4": "VERSUS/范瑟丝",
+			"path": "images/CggA950.png",
+			"smallImg": ["images/Cgkw113=60x60.jpg","images/Cgke0647=60x60.JPG"
+			],
+			"bigImg": ["images/Cgkw113=400x400.jpg","images/Cgke0647=400x400.JPG"
+			],
+			"zoomImg":["images/Cgkw113.jpg","images/Cgke0647.JPG"
+			],
+			"color": ["黑色"],
+			"size": ["L","M","S","XL","XXL"]
+		},{
+			"title": "新品男款纯棉针织T恤衫",
+			"id": "6",
+			"price": "¥999.00",
+			"del":"¥1850.00",
+			"tit1": "男装",
+			"tit2": "男士上装",
+			"tit3": "短袖T恤",
+			"tit4": "BURBERRY",
+			"path": "images/Cggo219.png",
+			"smallImg": ["images/Cggk575=60x60.JPG","images/CggL8639=60x60.JPG"
+			],
+			"bigImg": ["images/Cggk575=400x400.JPG","images/CggL8639=400x400.JPG"
+			],
+			"zoomImg":["images/Cggk575.JPG","images/CggL8639.JPG"
+			],
+			"color": ["白色"],
+			"size": ["L","M","S","XL"]
+		},{
+			"title": "女款牛皮单肩包",
+			"id": "7",
+			"price": "¥1490.00",
+			"del":"¥2150.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "单肩包",
+			"tit4": "MICHAEL KORS",
+			"path": "images/CggE390.jpg",
+			"smallImg": ["images/Cggs563=60x60.JPG","images/CggU988=60x60.JPG"
+			],
+			"bigImg": ["images/Cggs563=400x400.JPG","images/CggU988=400x400.JPG"
+			],
+			"zoomImg":["images/Cggs563.JPG","images/CggU988.JPG"
+			],
+			"color": ["黑色"],
+			"size": []
+		},{
+			"title": "新品男款牛皮皮带",
+			"id": "8",
+			"price": "¥1590.00",
+			"del":"¥2300.00",
+			"tit1": "配饰",
+			"tit2": "服饰配件",
+			"tit3": "男士皮带",
+			"tit4": "Coach",
+			"path": "images/Cggw576.png",
+			"smallImg": ["images/CggM755=60x60.JPG","images/CggE547=60x60.JPG"
+			],
+			"bigImg": ["images/CggM755=400x400.JPG","images/CggE547=400x400.JPG"
+			],
+			"zoomImg":["images/CggM755.JPG","images/CggE547.JPG"
+			],
+			"color": ["黑色/棕色"],
+			"size": ["//"]
+		}
+		
+	],
+	"crosss":[
+		{
+			"intro": ["面部护理","香水彩妆","日常个护","进口尿裤","奶粉辅食","营养保健"]
+		},
+		{
+			"leftBImg":"images/CggG8122.jpg"
+		},
+		{
+			"rightImg":["images/Cggc222.jpg","images/CggY448.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "安耐晒组合装（60ml+10ml） ",
+			"id": "9",
+			"price": "¥268.00",
+			"del":"¥324.00",
+			"tit1": "进口美妆个护",
+			"tit2": "面部护肤",
+			"tit3": "防嗮隔离",
+			"tit4": "资生堂/Shiseido",
+			"path": "images/CggU930.jpg",
+			"smallImg": ["images/Cgge4619=60x60.jpg"
+			],
+			"bigImg": ["images/Cgge4619=400x400.jpg"
+			],
+			"zoomImg":["images/Cgge4619.jpg"
+			],
+			"color": [],
+			"size": []
+		},{
+			"title": "舒妍温和保湿卸妆水500ml",
+			"id": "10",
+			"price": "¥125.00",
+			"del":"¥165.00",
+			"tit1": "进口美妆个护",
+			"tit2": "香水彩妆",
+			"tit3": "卸妆",
+			"tit4": "贝德玛",
+			"path": "images/CggA781.jpg",
+			"smallImg": ["images/CggA316=60x60.jpg","images/CggQ183=60x60.jpg"
+			],
+			"bigImg": ["images/CggA316=400x400.jpg","images/CggQ183=400x400.jpg"
+			],
+			"zoomImg":["images/CggA316.jpg","images/CggQ183.jpg"
+			],
+			"color": [],
+			"size": []
+		},{
+			"title": "kiehl's 金盏花爽肤水 250ml",
+			"id": "11",
+			"price": "¥339.00",
+			"del":"¥395.00",
+			"tit1": "进口美妆个护",
+			"tit2": "面部护肤",
+			"tit3": "爽肤水",
+			"tit4": "科颜氏",
+			"path": "images/Cggo663.jpg",
+			"smallImg": ["images/Cggw581=60x60.jpg","images/CggI276=60x60.jpg"
+			],
+			"bigImg": ["images/Cggw581=400x400.jpg","images/CggI276=400x400.jpg"
+			],
+			"zoomImg":["images/Cggw581.jpg","images/CggI276.jpg"
+			],
+			"color": [],
+			"size": []
+		},{
+			"title": "TF黑金黑管01#spanish pink",
+			"id": "12",
+			"price": "¥398.00",
+			"del":"¥478.00",
+			"tit1": "进口美妆个护",
+			"tit2": "香水彩妆",
+			"tit3": "唇部",
+			"tit4": "Tom Ford/汤姆福特",
+			"path": "images/CggY472.jpg",
+			"smallImg": ["images/Cggw962=60x60.jpg","images/Cggw695=60x60.jpg"
+			],
+			"bigImg": ["images/Cggw962=400x400.jpg","images/Cggw695=400x400.jpg"
+			],
+			"zoomImg":["images/Cggw962.jpg","images/Cggw695.jpg"
+			],
+			"color": [],
+			"size": []
+		},{
+			"title": "润膏舒盈滋养洗发水250ml",
+			"id": "13",
+			"price": "¥59.00",
+			"del": "¥92.00",
+			"tit1": "进口美妆个护",
+			"tit2": "身体护肤",
+			"tit3": "洗发护发",
+			"tit4": "LG",
+			"path": "images/CggM425.jpg",
+			"smallImg": ["images/Cggw4988=60x60.jpg","images/CggC4230=60x60.jpg"
+			],
+			"bigImg": ["images/Cggw4988=400x400.jpg","images/CggC4230=400x400.jpg"
+			],
+			"zoomImg":["images/Cggw4988.jpg","images/CggC4230.jpg"
+			],
+			"color": [],
+			"size": []
+		},{
+			"title": "美肌沐浴露(恬静清香) 550ml",
+			"id": "14",
+			"price": "¥53.00",
+			"del": "¥63.00",
+			"tit1": "进口美妆个护",
+			"tit2": "身体护肤",
+			"tit3": "沐浴",
+			"tit4": "可悠然",
+			"path": "images/Cggk203.jpg",
+			"smallImg": ["images/CgkE678=60x60.JPG","images/CgkQ029=60x60.JPG"
+			],
+			"bigImg": ["images/CgkE678=400x400.JPG","images/CgkQ029=400x400.JPG"
+			],
+			"zoomImg":["images/CgkE678.JPG","images/CgkQ029.JPG"
+			],
+			"color": [],
+			"size": []
+		}
+
+		
+	],
+	"outerdoors":[
+		{
+			"intro": ["卫衣/套头衫","T恤","跑步鞋","板鞋/休闲鞋","篮球鞋","体育用品","健身训练","户外配件"]
+		},
+		{
+			"leftBImg":"images/CggA482.jpg"
+		},
+		{
+			"rightImg":["images/Cggj0404.jpg","images/Cggg350.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "男子夏季新款休闲运动T恤",
+			"id": "15",
+			"price": "¥69.00",
+			"del": "¥109.00",
+			"tit1": "运动服饰",
+			"tit2": "男士休闲运动服",
+			"tit3": "T恤",
+			"tit4": "Xtep特步",
+			"path": "images/CggI771.jpg",
+			"smallImg": ["images/Cggw343=60x60.jpg","images/Cggc481=60x60.jpg"
+			],
+			"bigImg": ["images/Cggw343=400x400.jpg","images/Cggc481=400x400.jpg"
+			],
+			"zoomImg":["images/Cggw343.jpg","images/Cggc481.jpg"
+			],
+			"color": ["浅花灰","白","黑"],
+			"size": ["L","M","XL","XXL"]
+		},{
+			"title": "吸湿排汗透气健身短袖",
+			"id": "16",
+			"price": "¥69.00",
+			"del": "¥119.00",
+			"tit1": "运动服饰",
+			"tit2": "男士休闲运动服",
+			"tit3": "T恤",
+			"tit4": "Xtep特步",
+			"path": "images/Cggw023.jpg",
+			"smallImg": ["images/CggU444=60x60.jpg","images/Cggg189=60x60.jpg"
+			],
+			"bigImg": ["images/CggU444=400x400.jpg","images/Cggg189=400x400.jpg"
+			],
+			"zoomImg":["images/CggU444.jpg","images/Cggg189.jpg"
+			],
+			"color": ["白","花灰","黑色"],
+			"size": ["L","M","S","XL","XXL"]
+		},{
+			"title": "圆领透气速干休闲短袖",
+			"id": "17",
+			"price": "¥89.00",
+			"del": "¥119.00",
+			"tit1": "运动服饰",
+			"tit2": "男士休闲运动服",
+			"tit3": "T恤",
+			"tit4": "安踏",
+			"path": "images/Cggi0267.jpg",
+			"smallImg": ["images/Cggc214=60x60.jpg","images/CggE925=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc214=400x400.jpg","images/CggE925=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc214.jpg","images/CggE925.jpg"
+			],
+			"color": ["白","花灰","黑色","蓝花灰"],
+			"size": ["L","M","XL","S","XXL"]
+		},{
+			"title": "女子透气轻便T恤",
+			"id": "18",
+			"price": "¥59.00",
+			"del": "¥99.00",
+			"tit1": "运动服饰",
+			"tit2": "女士休闲运动服",
+			"tit3": "T恤",
+			"tit4": "Xtep特步",
+			"path": "images/Cggk202.jpg",
+			"smallImg": ["images/Cggk009=60x60.jpg","images/Cggk593=60x60.jpg"
+			],
+			"bigImg": ["images/Cggk009=400x400.jpg","images/Cggk593=400x400.jpg"
+			],
+			"zoomImg":["images/Cggk009.jpg","images/Cggk593.jpg"
+			],
+			"color": ["宝兰","桔红","浅花灰","白色"],
+			"size": ["L","M","S","XL","XS"]
+		},{
+			"title": "男式时尚舒适跑鞋",
+			"id": "19",
+			"price": "¥399.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "男士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggI047.jpg",
+			"smallImg": ["images/Cggc689=60x60.jpg","images/CggE025=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc689=400x400.jpg","images/CggE025=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc689.jpg","images/CggE025.jpg"
+			],
+			"color": ["黑色","浅狸红","亮白"],
+			"size": ["40.5","41","42","43"]
+		},{
+			"title": "女士时尚舒适跑步鞋",
+			"id": "20",
+			"price": "¥259.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "女士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggY498.jpg",
+			"smallImg": ["images/CggA826=60x60.jpg","images/Cggw093=60x60.jpg"
+			],
+			"bigImg": ["images/CggA826=400x400.jpg","images/Cggw093=400x400.jpg"
+			],
+			"zoomImg":["images/CggA826.jpg","images/Cggw093.jpg"
+			],
+			"color": ["爆炸粉","霓虹","铁灰","热情红"],
+			"size": ["36","36.5","37","38"]
+		},{
+			"title": "赵丽颖凤尾刺绣闺蜜鞋",
+			"id": "21",
+			"price": "¥259.00",
+			"del": "¥279.00",
+			"tit1": "运动服饰",
+			"tit2": "女士运动鞋",
+			"tit3": "板鞋/休闲鞋",
+			"tit4": "Xtep特步",
+			"path": "images/CggI490.jpg",
+			"smallImg": ["images/Cggs8843=60x60.jpg","images/CggI227=60x60.jpg"
+			],
+			"bigImg": ["images/Cggs8843=400x400.jpg","images/CggI227=400x400.jpg"
+			],
+			"zoomImg":["images/Cggs8843.jpg","images/CggI227.jpg"
+			],
+			"color": ["白","黑"],
+			"size": ["35","36","37","38"]
+		},{
+			"title": "男式轻便时尚跑步鞋",
+			"id": "22",
+			"price": "¥199.00",
+			"del": "¥329.00",
+			"tit1": "运动服饰",
+			"tit2": "男士运动鞋",
+			"tit3": "板鞋/休闲鞋",
+			"tit4": "361°",
+			"path": "images/CggH0426.jpg",
+			"smallImg": ["images/CggY328=60x60.jpg","images/CggU144=60x60.jpg"
+			],
+			"bigImg": ["images/CggY328=400x400.jpg","images/CggU144=400x400.jpg"
+			],
+			"zoomImg":["images/CggY328.jpg","images/CggU144.jpg"
+			],
+			"color": ["蓝","黑","F1红"],
+			"size": ["40","41","42","43"]
+		}
+	],
+	"fashions":[
+		{
+			"intro": ["衬衫","外套","连衣裙","套装","半身裙","短裤","牛仔裤","T恤"]
+		},
+		{
+			"leftBImg":"images/CggM873.jpg"
+		},
+		{
+			"rightImg":["images/CggE756.jpg","images/CggM890.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "绑带设计假两件衬衫",
+			"id": "23",
+			"price": "¥139.00",
+			"del": "¥369.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "衬衫",
+			"tit4": "OTHERMIX七格格",
+			"path": "images/CggQ963.jpg",
+			"smallImg": ["images/Cggs306=60x60.jpg","images/Cggc195=60x60.jpg"
+			],
+			"bigImg": ["images/Cggs306=400x400.jpg","images/Cggc195=400x400.jpg"
+			],
+			"zoomImg":["images/Cggs306.jpg","images/Cggc195.jpg"
+			],
+			"color": ["绿色"],
+			"size": ["L","M","S","XL"]
+		},{
+			"title": "不对称露肩绣花设计T恤",
+			"id": "24",
+			"price": "¥99.00",
+			"del": "¥269.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "OTHERMIX七格格",
+			"path": "images/CggI224.jpg",
+			"smallImg": ["images/CggE772=60x60.jpg","images/Cggg372=60x60.jpg"
+			],
+			"bigImg": ["images/CggE772=400x400.jpg","images/Cggg372=400x400.jpg"
+			],
+			"zoomImg":["images/CggE772.jpg","images/Cggg372.jpg"
+			],
+			"color": ["白色"],
+			"size": ["L","M","S","XL"]
+		},{
+			"title": "显瘦印花长袖连衣裙",
+			"id": "25",
+			"price": "¥156.00",
+			"del": "¥279.00",
+			"tit1": "女装",
+			"tit2": "裙装",
+			"tit3": "连衣裙",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/CggE393.jpg",
+			"smallImg": ["images/CggY180=60x60.jpg","images/Cggk369=60x60.jpg"
+			],
+			"bigImg": ["images/CggY180=400x400.jpg","images/Cggk369=400x400.jpg"
+			],
+			"zoomImg":["images/CggY180.jpg","images/Cggk369.jpg"
+			],
+			"color": ["藏蓝色"],
+			"size": ["L","M","X","XS","XL"]
+		},{
+			"title": "植物印花短袖白T恤",
+			"id": "26",
+			"price": "¥79.00",
+			"del": "¥239.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "茵曼",
+			"path": "images/CggY441.jpg",
+			"smallImg": ["images/CggQ988=60x60.jpg","images/Cggo8165=60x60.jpg"
+			],
+			"bigImg": ["images/CggQ988=400x400.jpg","images/Cggo8165=400x400.jpg"
+			],
+			"zoomImg":["images/CggQ988.jpg","images/Cggo8165.jpg"
+			],
+			"color": ["珍珠白"],
+			"size": ["L","M","X","XL"]
+		},{
+			"title": "修身条纹百搭短袖T恤",
+			"id": "27",
+			"price": "¥48.00",
+			"del": "¥138.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/Cggo385.jpg",
+			"smallImg": ["images/CggQ229=60x60.jpg","images/CggU018=60x60.jpg"
+			],
+			"bigImg": ["images/CggQ229=400x400.jpg","images/CggU018=400x400.jpg"
+			],
+			"zoomImg":["images/CggQ229.jpg","images/CggU018.jpg"
+			],
+			"color": ["白色","粉色","藏蓝色"],
+			"size": ["L","M","S","XS"]
+		},{
+			"title": "夏季印花露背连衣裙",
+			"id": "28",
+			"price": "¥298.00",
+			"del": "¥998.00",
+			"tit1": "女装",
+			"tit2": "裙装",
+			"tit3": "连衣裙",
+			"tit4": "E-LAND",
+			"path": "images/Cggk739.jpg",
+			"smallImg": ["images/Cggc925=60x60.jpg","images/CggQ423=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc925=400x400.jpg","images/CggQ423=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc925.jpg","images/CggQ423.jpg"
+			],
+			"color": ["VORY","NAVY"],
+			"size": ["155","160","165","170"]
+		},{
+			"title": "T恤连衣裙套装两件套",
+			"id": "29",
+			"price": "¥199.00",
+			"del": "¥499.00",
+			"tit1": "女装",
+			"tit2": "套装",
+			"tit3": "套裙",
+			"tit4": "茵曼",
+			"path": "images/CggE908.jpg",
+			"smallImg": ["images/Cggc764=60x60.jpg","images/Cggo149=60x60.jpg"
+			],
+			"bigImg": ["images/Cgg764=400x400.jpg","images/Cggo149=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc764.jpg","images/Cggo149.jpg"
+			],
+			"color": ["天蓝色"],
+			"size": ["L","M","S","XL"]
+		},{
+			"title": "牛皮裙带牛仔裤带",
+			"id": "30",
+			"price": "¥89.00",
+			"del": "¥278.00",
+			"tit1": "女装",
+			"tit2": "配件",
+			"tit3": "皮带",
+			"tit4": "妮维奥",
+			"path": "images/CggA384.jpg",
+			"smallImg": ["images/Cggc113=60x60.jpg","images/CggM642=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc113=400x400.jpg","images/CggM642=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc113.jpg","images/CggM642.jpg"
+			],
+			"color": ["白色","红色","绿色","黑色"],
+			"size": ["103CM"]
+		}
+
+	],
+	"menwears":[
+		{
+			"intro": ["长袖T恤","长袖衬衫","长袖POLO衫","针织衫/毛衫","夹克","羽绒服","男士皮带","休闲长裤"]
+		},
+		{
+			"leftBImg":"images/CggY242.jpg"
+		},
+		{
+			"rightImg":["images/CggU212.jpg","images/CggI239.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "男士时尚气质短袖衬衣",
+			"id": "31",
+			"price": "¥350.00",
+			"del":"¥699.00",
+			"tit1": "男装",
+			"tit2": "男士上装",
+			"tit3": "短袖衬衫",
+			"tit4": "圣得西",
+			"path": "images/CggM804.jpg",
+			"smallImg": ["images/CggQ445=60x60.JPG","images/Cggw839=60x60.JPG"
+			],
+			"bigImg": ["images/CggQ445=400x400.JPG","images/Cggw839=400x400.JPG"
+			],
+			"zoomImg":["images/CggQ445.JPG","images/Cggw839.JPG"
+			],
+			"color": ["湖蓝"],
+			"size": ["38","39","40","41","42"]
+		},{
+			"title": "女士百搭时尚一字扣高跟凉鞋 ",
+			"id": "32",
+			"price": "¥239.00",
+			"del":"¥959.00",
+			"tit1": "鞋靴",
+			"tit2": "女鞋",
+			"tit3": "凉鞋/拖鞋",
+			"tit4": "接吻猫",
+			"path": "images/Cggw563.jpg",
+			"smallImg": ["images/Cggt8158=60x60.JPG","images/CggY116=60x60.JPG"
+			],
+			"bigImg": ["images/Cggt8158=400x400.JPG","images/CggY116=400x400.JPG"
+			],
+			"zoomImg":["images/Cggt8158.JPG","images/CggY116.JPG"
+			],
+			"color": ["米白"],
+			"size": ["240","245"]
+		},{
+			"title": "显瘦印花长袖连衣裙",
+			"id": "25",
+			"price": "¥156.00",
+			"del": "¥279.00",
+			"tit1": "女装",
+			"tit2": "裙装",
+			"tit3": "连衣裙",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/CggE393.jpg",
+			"smallImg": ["images/CggY180=60x60.jpg","images/Cggk369=60x60.jpg"
+			],
+			"bigImg": ["images/CggY180=400x400.jpg","images/Cggk369=400x400.jpg"
+			],
+			"zoomImg":["images/CggY180.jpg","images/Cggk369.jpg"
+			],
+			"color": ["藏蓝色"],
+			"size": ["L","M","X","XS","XL"]
+		},{
+			"title": "植物印花短袖白T恤",
+			"id": "26",
+			"price": "¥79.00",
+			"del": "¥239.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "茵曼",
+			"path": "images/CggY441.jpg",
+			"smallImg": ["images/CggQ988=60x60.jpg","images/Cggo8165=60x60.jpg"
+			],
+			"bigImg": ["images/CggQ988=400x400.jpg","images/Cggo8165=400x400.jpg"
+			],
+			"zoomImg":["images/CggQ988.jpg","images/Cggo8165.jpg"
+			],
+			"color": ["珍珠白"],
+			"size": ["L","M","X","XL"]
+		},{
+			"title": "男式时尚舒适跑鞋",
+			"id": "19",
+			"price": "¥399.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "男士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggI047.jpg",
+			"smallImg": ["images/Cggc689=60x60.jpg","images/CggE025=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc689=400x400.jpg","images/CggE025=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc689.jpg","images/CggE025.jpg"
+			],
+			"color": ["黑色","浅狸红","亮白"],
+			"size": ["40.5","41","42","43"]
+		},{
+			"title": "女士时尚舒适跑步鞋",
+			"id": "20",
+			"price": "¥259.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "女士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggY498.jpg",
+			"smallImg": ["images/CggA826=60x60.jpg","images/Cggw093=60x60.jpg"
+			],
+			"bigImg": ["images/CggA826=400x400.jpg","images/Cggw093=400x400.jpg"
+			],
+			"zoomImg":["images/CggA826.jpg","images/Cggw093.jpg"
+			],
+			"color": ["爆炸粉","霓虹","铁灰","热情红"],
+			"size": ["36","36.5","37","38"]
+		},{
+			"title": "新款夏季简约单肩包斜挎包",
+			"id": "33",
+			"price": "¥760.00",
+			"del":"¥1390.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "斜垮包",
+			"tit4": "GUY LAROCHE/姬龙雪",
+			"path": "images/CggJ0169.jpg",
+			"smallImg": ["images/CggE096=60x60.jpg","images/Cggo203=60x60.jpg"
+			],
+			"bigImg": ["images/CggE096=400x400.jpg","images/Cggo203=400x400.jpg"
+			],
+			"zoomImg":["images/CggE096.jpg","images/Cggo203.jpg"
+			],
+			"color": ["粉红色","红色","黑色"],
+			"size": ["均码"]
+		},{
+			"title": "女童立领长袖外套",
+			"id": "34",
+			"price": "¥199.00",
+			"del":"¥399.00",
+			"tit1": "童装童鞋",
+			"tit2": "女童装",
+			"tit3": "外套",
+			"tit4": "安奈儿",
+			"path": "images/CggI589.jpg",
+			"smallImg": ["images/CggA456=60x60.JPG","images/CggE122=60x60.JPG"
+			],
+			"bigImg": ["images/CggA456=400x400.JPG","images/CggE122=400x400.JPG"
+			],
+			"zoomImg":["images/CggA456.JPG","images/CggE122.JPG"
+			],
+			"color": ["甜心粉"],
+			"size": ["120","130"]
+		}
+
+	],
+	"shoes":[
+		{
+			"intro": ["女休闲鞋","男休闲鞋","高跟单鞋","平底单鞋","商务休闲鞋","正装鞋"]
+		},
+		{
+			"leftBImg":"images/CggU00449.jpg"
+		},
+		{
+			"rightImg":["images/Cggw707.jpg","images/Cggo210.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "男士时尚气质短袖衬衣",
+			"id": "31",
+			"price": "¥350.00",
+			"del":"¥699.00",
+			"tit1": "男装",
+			"tit2": "男士上装",
+			"tit3": "短袖衬衫",
+			"tit4": "圣得西",
+			"path": "images/CggM804.jpg",
+			"smallImg": ["images/CggQ445=60x60.JPG","images/Cggw839=60x60.JPG"
+			],
+			"bigImg": ["images/CggQ445=400x400.JPG","images/Cggw839=400x400.JPG"
+			],
+			"zoomImg":["images/CggQ445.JPG","images/Cggw839.JPG"
+			],
+			"color": ["湖蓝"],
+			"size": ["38","39","40","41","42"]
+		},{
+			"title": "女士百搭时尚一字扣高跟凉鞋 ",
+			"id": "32",
+			"price": "¥239.00",
+			"del":"¥959.00",
+			"tit1": "鞋靴",
+			"tit2": "女鞋",
+			"tit3": "凉鞋/拖鞋",
+			"tit4": "接吻猫",
+			"path": "images/Cggw563.jpg",
+			"smallImg": ["images/Cggt8158=60x60.JPG","images/CggY116=60x60.JPG"
+			],
+			"bigImg": ["images/Cggt8158=400x400.JPG","images/CggY116=400x400.JPG"
+			],
+			"zoomImg":["images/Cggt8158.JPG","images/CggY116.JPG"
+			],
+			"color": ["米白"],
+			"size": ["240","245"]
+		},{
+			"title": "显瘦印花长袖连衣裙",
+			"id": "25",
+			"price": "¥156.00",
+			"del": "¥279.00",
+			"tit1": "女装",
+			"tit2": "裙装",
+			"tit3": "连衣裙",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/CggE393.jpg",
+			"smallImg": ["images/CggY180=60x60.jpg","images/Cggk369=60x60.jpg"
+			],
+			"bigImg": ["images/CggY180=400x400.jpg","images/Cggk369=400x400.jpg"
+			],
+			"zoomImg":["images/CggY180.jpg","images/Cggk369.jpg"
+			],
+			"color": ["藏蓝色"],
+			"size": ["L","M","X","XS","XL"]
+		},{
+			"title": "植物印花短袖白T恤",
+			"id": "26",
+			"price": "¥79.00",
+			"del": "¥239.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "茵曼",
+			"path": "images/CggY441.jpg",
+			"smallImg": ["images/CggQ988=60x60.jpg","images/Cggo8165=60x60.jpg"
+			],
+			"bigImg": ["images/CggQ988=400x400.jpg","images/Cggo8165=400x400.jpg"
+			],
+			"zoomImg":["images/CggQ988.jpg","images/Cggo8165.jpg"
+			],
+			"color": ["珍珠白"],
+			"size": ["L","M","X","XL"]
+		},{
+			"title": "男式时尚舒适跑鞋",
+			"id": "19",
+			"price": "¥399.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "男士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggI047.jpg",
+			"smallImg": ["images/Cggc689=60x60.jpg","images/CggE025=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc689=400x400.jpg","images/CggE025=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc689.jpg","images/CggE025.jpg"
+			],
+			"color": ["黑色","浅狸红","亮白"],
+			"size": ["40.5","41","42","43"]
+		},{
+			"title": "女士时尚舒适跑步鞋",
+			"id": "20",
+			"price": "¥259.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "女士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggY498.jpg",
+			"smallImg": ["images/CggA826=60x60.jpg","images/Cggw093=60x60.jpg"
+			],
+			"bigImg": ["images/CggA826=400x400.jpg","images/Cggw093=400x400.jpg"
+			],
+			"zoomImg":["images/CggA826.jpg","images/Cggw093.jpg"
+			],
+			"color": ["爆炸粉","霓虹","铁灰","热情红"],
+			"size": ["36","36.5","37","38"]
+		},{
+			"title": "新款夏季简约单肩包斜挎包",
+			"id": "33",
+			"price": "¥760.00",
+			"del":"¥1390.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "斜垮包",
+			"tit4": "GUY LAROCHE/姬龙雪",
+			"path": "images/CggJ0169.jpg",
+			"smallImg": ["images/CggE096=60x60.jpg","images/Cggo203=60x60.jpg"
+			],
+			"bigImg": ["images/CggE096=400x400.jpg","images/Cggo203=400x400.jpg"
+			],
+			"zoomImg":["images/CggE096.jpg","images/Cggo203.jpg"
+			],
+			"color": ["粉红色","红色","黑色"],
+			"size": ["均码"]
+		},{
+			"title": "女童立领长袖外套",
+			"id": "34",
+			"price": "¥199.00",
+			"del":"¥399.00",
+			"tit1": "童装童鞋",
+			"tit2": "女童装",
+			"tit3": "外套",
+			"tit4": "安奈儿",
+			"path": "images/CggI589.jpg",
+			"smallImg": ["images/CggA456=60x60.JPG","images/CggE122=60x60.JPG"
+			],
+			"bigImg": ["images/CggA456=400x400.JPG","images/CggE122=400x400.JPG"
+			],
+			"zoomImg":["images/CggA456.JPG","images/CggE122.JPG"
+			],
+			"color": ["甜心粉"],
+			"size": ["120","130"]
+		}
+
+	],
+	"bagss":[
+		{
+			"intro": ["钱包","双肩包","斜跨包","手提斜跨包","单肩包","拉杆箱","胸包/腰包","公文包"]
+		},
+		{
+			"leftBImg":"images/CggI145.jpg"
+		},
+		{
+			"rightImg":["images/CggQ696.jpg","images/CggE388.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "男士时尚气质短袖衬衣",
+			"id": "31",
+			"price": "¥350.00",
+			"del":"¥699.00",
+			"tit1": "男装",
+			"tit2": "男士上装",
+			"tit3": "短袖衬衫",
+			"tit4": "圣得西",
+			"path": "images/CggM804.jpg",
+			"smallImg": ["images/CggQ445=60x60.JPG","images/Cggw839=60x60.JPG"
+			],
+			"bigImg": ["images/CggQ445=400x400.JPG","images/Cggw839=400x400.JPG"
+			],
+			"zoomImg":["images/CggQ445.JPG","images/Cggw839.JPG"
+			],
+			"color": ["湖蓝"],
+			"size": ["38","39","40","41","42"]
+		},{
+			"title": "女士百搭时尚一字扣高跟凉鞋 ",
+			"id": "32",
+			"price": "¥239.00",
+			"del":"¥959.00",
+			"tit1": "鞋靴",
+			"tit2": "女鞋",
+			"tit3": "凉鞋/拖鞋",
+			"tit4": "接吻猫",
+			"path": "images/Cggw563.jpg",
+			"smallImg": ["images/Cggt8158=60x60.JPG","images/CggY116=60x60.JPG"
+			],
+			"bigImg": ["images/Cggt8158=400x400.JPG","images/CggY116=400x400.JPG"
+			],
+			"zoomImg":["images/Cggt8158.JPG","images/CggY116.JPG"
+			],
+			"color": ["米白"],
+			"size": ["240","245"]
+		},{
+			"title": "显瘦印花长袖连衣裙",
+			"id": "25",
+			"price": "¥156.00",
+			"del": "¥279.00",
+			"tit1": "女装",
+			"tit2": "裙装",
+			"tit3": "连衣裙",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/CggE393.jpg",
+			"smallImg": ["images/CggY180=60x60.jpg","images/Cggk369=60x60.jpg"
+			],
+			"bigImg": ["images/CggY180=400x400.jpg","images/Cggk369=400x400.jpg"
+			],
+			"zoomImg":["images/CggY180.jpg","images/Cggk369.jpg"
+			],
+			"color": ["藏蓝色"],
+			"size": ["L","M","X","XS","XL"]
+		},{
+			"title": "植物印花短袖白T恤",
+			"id": "26",
+			"price": "¥79.00",
+			"del": "¥239.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "茵曼",
+			"path": "images/CggY441.jpg",
+			"smallImg": ["images/CggQ988=60x60.jpg","images/Cggo8165=60x60.jpg"
+			],
+			"bigImg": ["images/CggQ988=400x400.jpg","images/Cggo8165=400x400.jpg"
+			],
+			"zoomImg":["images/CggQ988.jpg","images/Cggo8165.jpg"
+			],
+			"color": ["珍珠白"],
+			"size": ["L","M","X","XL"]
+		},{
+			"title": "男式时尚舒适跑鞋",
+			"id": "19",
+			"price": "¥399.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "男士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggI047.jpg",
+			"smallImg": ["images/Cggc689=60x60.jpg","images/CggE025=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc689=400x400.jpg","images/CggE025=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc689.jpg","images/CggE025.jpg"
+			],
+			"color": ["黑色","浅狸红","亮白"],
+			"size": ["40.5","41","42","43"]
+		},{
+			"title": "女士时尚舒适跑步鞋",
+			"id": "20",
+			"price": "¥259.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "女士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggY498.jpg",
+			"smallImg": ["images/CggA826=60x60.jpg","images/Cggw093=60x60.jpg"
+			],
+			"bigImg": ["images/CggA826=400x400.jpg","images/Cggw093=400x400.jpg"
+			],
+			"zoomImg":["images/CggA826.jpg","images/Cggw093.jpg"
+			],
+			"color": ["爆炸粉","霓虹","铁灰","热情红"],
+			"size": ["36","36.5","37","38"]
+		},{
+			"title": "新款夏季简约单肩包斜挎包",
+			"id": "33",
+			"price": "¥760.00",
+			"del":"¥1390.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "斜垮包",
+			"tit4": "GUY LAROCHE/姬龙雪",
+			"path": "images/CggJ0169.jpg",
+			"smallImg": ["images/CggE096=60x60.jpg","images/Cggo203=60x60.jpg"
+			],
+			"bigImg": ["images/CggE096=400x400.jpg","images/Cggo203=400x400.jpg"
+			],
+			"zoomImg":["images/CggE096.jpg","images/Cggo203.jpg"
+			],
+			"color": ["粉红色","红色","黑色"],
+			"size": ["均码"]
+		},{
+			"title": "女童立领长袖外套",
+			"id": "34",
+			"price": "¥199.00",
+			"del":"¥399.00",
+			"tit1": "童装童鞋",
+			"tit2": "女童装",
+			"tit3": "外套",
+			"tit4": "安奈儿",
+			"path": "images/CggI589.jpg",
+			"smallImg": ["images/CggA456=60x60.JPG","images/CggE122=60x60.JPG"
+			],
+			"bigImg": ["images/CggA456=400x400.JPG","images/CggE122=400x400.JPG"
+			],
+			"zoomImg":["images/CggA456.JPG","images/CggE122.JPG"
+			],
+			"color": ["甜心粉"],
+			"size": ["120","130"]
+		}
+
+	],
+	"underwears":[
+		{
+			"intro": ["文胸","女士内裤","男士内裤","泳装","家居服","袜类","孕妇内衣","保暖衣"]
+		},
+		{
+			"leftBImg":"images/CggP8181.jpg"
+		},
+		{
+			"rightImg":["images/Cggo444.jpg","images/Cggw785.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "男士时尚气质短袖衬衣",
+			"id": "31",
+			"price": "¥350.00",
+			"del":"¥699.00",
+			"tit1": "男装",
+			"tit2": "男士上装",
+			"tit3": "短袖衬衫",
+			"tit4": "圣得西",
+			"path": "images/CggM804.jpg",
+			"smallImg": ["images/CggQ445=60x60.JPG","images/Cggw839=60x60.JPG"
+			],
+			"bigImg": ["images/CggQ445=400x400.JPG","images/Cggw839=400x400.JPG"
+			],
+			"zoomImg":["images/CggQ445.JPG","images/Cggw839.JPG"
+			],
+			"color": ["湖蓝"],
+			"size": ["38","39","40","41","42"]
+		},{
+			"title": "女士百搭时尚一字扣高跟凉鞋 ",
+			"id": "32",
+			"price": "¥239.00",
+			"del":"¥959.00",
+			"tit1": "鞋靴",
+			"tit2": "女鞋",
+			"tit3": "凉鞋/拖鞋",
+			"tit4": "接吻猫",
+			"path": "images/Cggw563.jpg",
+			"smallImg": ["images/Cggt8158=60x60.JPG","images/CggY116=60x60.JPG"
+			],
+			"bigImg": ["images/Cggt8158=400x400.JPG","images/CggY116=400x400.JPG"
+			],
+			"zoomImg":["images/Cggt8158.JPG","images/CggY116.JPG"
+			],
+			"color": ["米白"],
+			"size": ["240","245"]
+		},{
+			"title": "显瘦印花长袖连衣裙",
+			"id": "25",
+			"price": "¥156.00",
+			"del": "¥279.00",
+			"tit1": "女装",
+			"tit2": "裙装",
+			"tit3": "连衣裙",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/CggE393.jpg",
+			"smallImg": ["images/CggY180=60x60.jpg","images/Cggk369=60x60.jpg"
+			],
+			"bigImg": ["images/CggY180=400x400.jpg","images/Cggk369=400x400.jpg"
+			],
+			"zoomImg":["images/CggY180.jpg","images/Cggk369.jpg"
+			],
+			"color": ["藏蓝色"],
+			"size": ["L","M","X","XS","XL"]
+		},{
+			"title": "植物印花短袖白T恤",
+			"id": "26",
+			"price": "¥79.00",
+			"del": "¥239.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "茵曼",
+			"path": "images/CggY441.jpg",
+			"smallImg": ["images/CggQ988=60x60.jpg","images/Cggo8165=60x60.jpg"
+			],
+			"bigImg": ["images/CggQ988=400x400.jpg","images/Cggo8165=400x400.jpg"
+			],
+			"zoomImg":["images/CggQ988.jpg","images/Cggo8165.jpg"
+			],
+			"color": ["珍珠白"],
+			"size": ["L","M","X","XL"]
+		},{
+			"title": "男式时尚舒适跑鞋",
+			"id": "19",
+			"price": "¥399.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "男士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggI047.jpg",
+			"smallImg": ["images/Cggc689=60x60.jpg","images/CggE025=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc689=400x400.jpg","images/CggE025=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc689.jpg","images/CggE025.jpg"
+			],
+			"color": ["黑色","浅狸红","亮白"],
+			"size": ["40.5","41","42","43"]
+		},{
+			"title": "女士时尚舒适跑步鞋",
+			"id": "20",
+			"price": "¥259.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "女士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggY498.jpg",
+			"smallImg": ["images/CggA826=60x60.jpg","images/Cggw093=60x60.jpg"
+			],
+			"bigImg": ["images/CggA826=400x400.jpg","images/Cggw093=400x400.jpg"
+			],
+			"zoomImg":["images/CggA826.jpg","images/Cggw093.jpg"
+			],
+			"color": ["爆炸粉","霓虹","铁灰","热情红"],
+			"size": ["36","36.5","37","38"]
+		},{
+			"title": "新款夏季简约单肩包斜挎包",
+			"id": "33",
+			"price": "¥760.00",
+			"del":"¥1390.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "斜垮包",
+			"tit4": "GUY LAROCHE/姬龙雪",
+			"path": "images/CggJ0169.jpg",
+			"smallImg": ["images/CggE096=60x60.jpg","images/Cggo203=60x60.jpg"
+			],
+			"bigImg": ["images/CggE096=400x400.jpg","images/Cggo203=400x400.jpg"
+			],
+			"zoomImg":["images/CggE096.jpg","images/Cggo203.jpg"
+			],
+			"color": ["粉红色","红色","黑色"],
+			"size": ["均码"]
+		},{
+			"title": "女童立领长袖外套",
+			"id": "34",
+			"price": "¥199.00",
+			"del":"¥399.00",
+			"tit1": "童装童鞋",
+			"tit2": "女童装",
+			"tit3": "外套",
+			"tit4": "安奈儿",
+			"path": "images/CggI589.jpg",
+			"smallImg": ["images/CggA456=60x60.JPG","images/CggE122=60x60.JPG"
+			],
+			"bigImg": ["images/CggA456=400x400.JPG","images/CggE122=400x400.JPG"
+			],
+			"zoomImg":["images/CggA456.JPG","images/CggE122.JPG"
+			],
+			"color": ["甜心粉"],
+			"size": ["120","130"]
+		}
+
+	],
+	"childrens":[
+		{
+			"intro": ["男童装","女童装","男童鞋","女童鞋","孕婴用品","书包","玩具类","车床用品"]
+		},
+		{
+			"leftBImg":"images/CggQ796.jpg"
+		},
+		{
+			"rightImg":["images/CggA4920.jpg","images/CggQ440.jpg"]
+		},{
+			"scroolImg":["images/Cggw238.jpg","images/CggM000.jpg","images/CggI357.jpg","images/Cggw719.jpg","images/Cggw793.jpg","images/Cggk401.jpg","images/CggF4644.jpg","images/Cggs514.jpg"]
+		},{
+			"title": "男士时尚气质短袖衬衣",
+			"id": "31",
+			"price": "¥350.00",
+			"del":"¥699.00",
+			"tit1": "男装",
+			"tit2": "男士上装",
+			"tit3": "短袖衬衫",
+			"tit4": "圣得西",
+			"path": "images/CggM804.jpg",
+			"smallImg": ["images/CggQ445=60x60.JPG","images/Cggw839=60x60.JPG"
+			],
+			"bigImg": ["images/CggQ445=400x400.JPG","images/Cggw839=400x400.JPG"
+			],
+			"zoomImg":["images/CggQ445.JPG","images/Cggw839.JPG"
+			],
+			"color": ["湖蓝"],
+			"size": ["38","39","40","41","42"]
+		},{
+			"title": "女士百搭时尚一字扣高跟凉鞋 ",
+			"id": "32",
+			"price": "¥239.00",
+			"del":"¥959.00",
+			"tit1": "鞋靴",
+			"tit2": "女鞋",
+			"tit3": "凉鞋/拖鞋",
+			"tit4": "接吻猫",
+			"path": "images/Cggw563.jpg",
+			"smallImg": ["images/Cggt8158=60x60.JPG","images/CggY116=60x60.JPG"
+			],
+			"bigImg": ["images/Cggt8158=400x400.JPG","images/CggY116=400x400.JPG"
+			],
+			"zoomImg":["images/Cggt8158.JPG","images/CggY116.JPG"
+			],
+			"color": ["米白"],
+			"size": ["240","245"]
+		},{
+			"title": "显瘦印花长袖连衣裙",
+			"id": "25",
+			"price": "¥156.00",
+			"del": "¥279.00",
+			"tit1": "女装",
+			"tit2": "裙装",
+			"tit3": "连衣裙",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/CggE393.jpg",
+			"smallImg": ["images/CggY180=60x60.jpg","images/Cggk369=60x60.jpg"
+			],
+			"bigImg": ["images/CggY180=400x400.jpg","images/Cggk369=400x400.jpg"
+			],
+			"zoomImg":["images/CggY180.jpg","images/Cggk369.jpg"
+			],
+			"color": ["藏蓝色"],
+			"size": ["L","M","X","XS","XL"]
+		},{
+			"title": "植物印花短袖白T恤",
+			"id": "26",
+			"price": "¥79.00",
+			"del": "¥239.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "茵曼",
+			"path": "images/CggY441.jpg",
+			"smallImg": ["images/CggQ988=60x60.jpg","images/Cggo8165=60x60.jpg"
+			],
+			"bigImg": ["images/CggQ988=400x400.jpg","images/Cggo8165=400x400.jpg"
+			],
+			"zoomImg":["images/CggQ988.jpg","images/Cggo8165.jpg"
+			],
+			"color": ["珍珠白"],
+			"size": ["L","M","X","XL"]
+		},{
+			"title": "男式时尚舒适跑鞋",
+			"id": "19",
+			"price": "¥399.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "男士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggI047.jpg",
+			"smallImg": ["images/Cggc689=60x60.jpg","images/CggE025=60x60.jpg"
+			],
+			"bigImg": ["images/Cggc689=400x400.jpg","images/CggE025=400x400.jpg"
+			],
+			"zoomImg":["images/Cggc689.jpg","images/CggE025.jpg"
+			],
+			"color": ["黑色","浅狸红","亮白"],
+			"size": ["40.5","41","42","43"]
+		},{
+			"title": "女士时尚舒适跑步鞋",
+			"id": "20",
+			"price": "¥259.00",
+			"del": "¥699.00",
+			"tit1": "运动服饰",
+			"tit2": "女士运动鞋",
+			"tit3": "跑步鞋",
+			"tit4": "adidas/阿迪达斯",
+			"path": "images/CggY498.jpg",
+			"smallImg": ["images/CggA826=60x60.jpg","images/Cggw093=60x60.jpg"
+			],
+			"bigImg": ["images/CggA826=400x400.jpg","images/Cggw093=400x400.jpg"
+			],
+			"zoomImg":["images/CggA826.jpg","images/Cggw093.jpg"
+			],
+			"color": ["爆炸粉","霓虹","铁灰","热情红"],
+			"size": ["36","36.5","37","38"]
+		},{
+			"title": "新款夏季简约单肩包斜挎包",
+			"id": "33",
+			"price": "¥760.00",
+			"del":"¥1390.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "斜垮包",
+			"tit4": "GUY LAROCHE/姬龙雪",
+			"path": "images/CggJ0169.jpg",
+			"smallImg": ["images/CggE096=60x60.jpg","images/Cggo203=60x60.jpg"
+			],
+			"bigImg": ["images/CggE096=400x400.jpg","images/Cggo203=400x400.jpg"
+			],
+			"zoomImg":["images/CggE096.jpg","images/Cggo203.jpg"
+			],
+			"color": ["粉红色","红色","黑色"],
+			"size": ["均码"]
+		},{
+			"title": "女童立领长袖外套",
+			"id": "34",
+			"price": "¥199.00",
+			"del":"¥399.00",
+			"tit1": "童装童鞋",
+			"tit2": "女童装",
+			"tit3": "外套",
+			"tit4": "安奈儿",
+			"path": "images/CggI589.jpg",
+			"smallImg": ["images/CggA456=60x60.JPG","images/CggE122=60x60.JPG"
+			],
+			"bigImg": ["images/CggA456=400x400.JPG","images/CggE122=400x400.JPG"
+			],
+			"zoomImg":["images/CggA456.JPG","images/CggE122.JPG"
+			],
+			"color": ["甜心粉"],
+			"size": ["120","130"]
+		}
+
+	],
+	"hotsales":[
+		{
+			"title": "2017韩版女装夏装新款字母印花宽松打底短袖T恤",
+			"id": "35",
+			"price": "¥48.00",
+			"del":"¥158.00",
+			"tit1": "女装",
+			"tit2": "女士上装",
+			"tit3": "短袖T恤",
+			"tit4": "韩都衣舍HSTYLE",
+			"path": "images/Cggg308=200x200.jpg",
+			"smallImg": ["images/Cggg308=60x60.jpg","images/CggA707=60x60.png"
+			],
+			"bigImg": ["images/Cggg308=400x400.jpg","images/CggA707=400x400.png"
+			],
+			"zoomImg":["images/Cggg308.jpg","images/CggA707.png"
+			],
+			"color": ["粉色","蓝色"],
+			"size": ["L","M","S"]
+		},{
+			"title": "圆环包链条大包绣花单肩女包",
+			"id": "36",
+			"price": "¥276.00",
+			"del":"¥549.00",
+			"tit1": "箱包",
+			"tit2": "女士包",
+			"tit3": "斜跨包",
+			"tit4": "千百惠",
+			"path": "images/Cggq8577=200x200.jpg",
+			"smallImg": ["images/Cggq8577=60x60.jpg"
+			],
+			"bigImg": ["images/Cggq8577=400x400.jpg"
+			],
+			"zoomImg":["images/Cggq8577.jpg"
+			],
+			"color": ["红色"],
+			"size": ["均码"]
+		},{
+			"title": "露趾羊皮一字扣带高跟凉鞋",
+			"id": "37",
+			"price": "¥238.00",
+			"del":"¥1098.00",
+			"tit1": "鞋靴",
+			"tit2": "女鞋",
+			"tit3": "凉鞋/拖鞋",
+			"tit4": "奈绮儿",
+			"path": "images/Cggk017=200x200.JPG",
+			"smallImg": ["images/Cggk017=60x60.JPG","images/Cggs078=60x60.JPG"
+			],
+			"bigImg": ["images/Cggk017=400x400.JPG","images/Cggs078=400x400.JPG"
+			],
+			"zoomImg":["images/Cggk017.JPG","images/Cggs078.JPG"
+			],
+			"color": ["红色","酒红色","黑色"],
+			"size": ["34","35","36","37","38"]
+		},{
+			"title": "贝壳提亮液妆前乳30m",
+			"id": "38",
+			"price": "¥108.00",
+			"del":"¥142.00",
+			"tit1": "进口美妆个护",
+			"tit2": "面部护肤",
+			"tit3": "乳液/面霜",
+			"tit4": "VDL",
+			"path": "images/CgkM670=200x200.jpg",
+			"smallImg": ["images/CgkM670=60x60.jpg","images/CgkO8251=60x60.jpg"
+			],
+			"bigImg": ["images/CgkM670=400x400.jpg","images/CgkO8251=400x400.jpg"
+			],
+			"zoomImg":["images/CgkM670.jpg","images/CgkO8251.jpg"
+			],
+			"color": [],
+			"size": []
+		},{
+			"title": "佰草集樱桃小口琉璃唇膏02 3.5g",
+			"id": "39",
+			"price": "¥90.00",
+			"del":"¥138.00",
+			"tit1": "护肤彩妆",
+			"tit2": "彩妆",
+			"tit3": "唇膏/口红",
+			"tit4": "佰草集",
+			"path": "images/Cgkg338=200x200.JPG",
+			"smallImg": ["images/Cgkg338=60x60.JPG","images/CgkM698=60x60.JPG"
+			],
+			"bigImg": ["images/Cgkg338=400x400.JPG","images/CgkM698=400x400.JPG"
+			],
+			"zoomImg":["images/Cgkg338.JPG","images/CgkM698.JPG"
+			],
+			"color": [],
+			"size": []
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,499 @@
+<!--主页头部start-------------------------------------------------------------------------------------->
+<div class="top">
+	<div class="w_1200 m_auto clear">
+		<ul class="top-l fl">
+			<li class="top-tips-aolaigo">
+				<a href="javascript:;">奥特莱斯购物中心</a>
+				<div class="tips-box" style="display: none;">
+					<i><em></em></i>
+					<ul class="top-tips">
+						<li>
+							<a href="javascript:;">深圳华盛奥特莱斯</a>
+						</li>
+						<li>
+							<a href="javascript:;">南宁华盛奥特莱斯</a>
+						</li>
+						<li>
+							<a href="javascript:;">南昌华盛奥特莱斯</a>
+						</li>
+						<li>
+							<a href="javascript:;">西安华盛奥特莱斯</a>
+						</li>
+						<li>
+							<a href="javascript:;">郑州华盛奥特莱斯</a>
+						</li>
+						<li>
+							<a href="javascript:;">哈尔滨华盛奥特莱斯</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:;">商家入驻</a>
+			</li>
+		</ul>
+		<ul class="top-r fr">
+			<li>您好,欢迎来到奥莱购</li>
+			<li id="userName">
+				<a href="javascript:;" class="login">请登录</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="reg">免费注册</a>
+			</li>
+			<li class="clear">
+				<i class="iconfont fl" style="color: #C81417;font-size: 18px;margin-right: 5px;">&#xe600;</i>
+				<a href="cart.html" class="fl">购物车</a>
+				<span class="num fl">0</span>
+			</li>
+			<li>
+				<a href="javascript:;">订单查询</a>
+			</li>
+			<li>
+				<a href="javascript:;">我的收藏</a>
+			</li>
+			<li>
+				<a href="javascript:;">帮助中心</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--主页头部end----------------------------------------------------------------------------------------------->
+
+<!--主页logo&searchsyart-------------------------------------------------------------------------------------->
+<header class="header w_1200 m_auto clear">
+	<a href="index.html" target="_blank" class="logo fl"><img src="images/logo.png" /></a>
+	<div class="itop-sh">
+		<div class="itop-sh-t">
+			<input type="text" name="sech" id="sech" value="耐克" placeholder="请输入您想寻找的商品名称" />
+			<input type="button" id="btn" value="搜索" />
+			<ul id="sechList">
+				<li>
+					<a href=""></a>
+				</li>
+			</ul>
+		</div>
+		<div class="itop-sh-list">
+			<dl>
+				<dt>热门搜索:</dt>
+				<dd>
+					<a href="javascript:;" target="_blank">新百伦</a>
+				</dd>
+				<dd>
+					<a href="javascript:;" target="_blank">T恤</a>
+				</dd>
+				<dd>
+					<a href="javascript:;" target="_blank">连衣裙</a>
+				</dd>
+				<dd>
+					<a href="javascript:;" target="_blank">休闲鞋</a>
+				</dd>
+				<dd>
+					<a href="javascript:;" target="_blank">防晒</a>
+				</dd>
+				<dd>
+					<a href="javascript:;" target="_blank">春装</a>
+				</dd>
+				<dd>
+					<a href="javascript:;" target="_blank">耐克</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="header-wx fr">
+		<img src="images/wx.png" />
+	</div>
+</header>
+<!--主页logo&search end------------------------------------------------------------------------------------->
+
+<!--主页nav------------------------------------------------------------------------------------------------->
+<nav class="nav w_1200 m_auto clear">
+	<!--all pro-->
+	<div class="select fl">
+		<div class="select-tit">
+			<div class="red-bg"></div>
+			全部商品
+			<div class="white-triangle"></div>
+		</div>
+		<div class="select-cont clear" style="display: block;">
+			<!--左侧导航-->
+			<ul class="select-cont-bar fl">
+				<script id="nav" type="text/html">
+					{{each navList as value}}
+					<li>
+						<span class="bcate fl">
+							<a href="javascript:;">{{value.title}}</a>
+						</span>						
+						<div class="scate fl">
+							{{each value.intro as item i}}
+							<a href="javascript:;">{{item}}</a>{{if i != value.intro.length-1}}<span>|</span>{{/if}}
+							{{/each}}
+						</div>	
+						<div class="books" style="display: none;">						
+							<div class="books-top">	
+								{{each value.detail[0].bookTop as item1}}
+								<dl>
+									<dt><a href="javascript:;">{{item1.pro}}</a></dt>
+									{{each item1.ddetail as item2}}
+									<dd>
+										<a href="javascript:;">{{item2}}</a>
+									</dd>
+									{{/each}}
+								</dl>
+								{{/each}}
+							</div>
+							<div class="books-down">
+								<dl>
+									{{each value.detail[1].bookDown as item3}}
+									<dd>
+										<a href="javascript:;"><img src="{{item3}}" /></a>
+									</dd>
+									{{/each}}
+								</dl>
+							</div>
+					</div>
+					</li>	
+					{{/each}}
+				</script>
+			</ul>				
+			
+		</div>
+	</div>
+	<!--导航栏-->
+	<ul class="nav-ul fl m_l_20">
+		<li>
+			<a href="javascript:;" class="active">首页</a>
+		</li>
+		<li>
+			<a href="javascript:;">国际奢品</a><em class="tips">best</em></li>
+		<li>
+			<a href="javascript:;">跨境优品</a>
+		</li>
+		<li>
+			<a href="javascript:;">限时秒杀</a>
+		</li>
+		<li>
+			<a href="javascript:;">线下实体</a>
+		</li>
+	</ul>
+</nav>
+<!--主页nav end-------------------------------------------------------------------------------------------->
+
+<!--主页尾部------------------------------------------------------------------------------------------------->
+<div class="foot w_full">
+	<div class="foot-cont w_1200 m_auto">
+		<!--foot-long-->
+		<ul class="foot-long">
+			<li>
+				<div class="foot-long-icon1 foot-long-icon foot-res"></div>
+				<div class="foot-long-desc">
+					<div class="btit">100%</div>
+					<div class="stit">全场正品保证</div>
+				</div>
+			</li>
+			<li>
+				<div class="foot-long-icon2 foot-long-icon foot-res"></div>
+				<div class="foot-long-desc">
+					<div class="btit">Mail</div>
+					<div class="stit">实付满58包邮</div>
+				</div>
+			</li>
+			<li>
+				<div class="foot-long-icon3 foot-long-icon foot-res"></div>
+				<div class="foot-long-desc">
+					<div class="btit">SALE</div>
+					<div class="stit">每天低价特卖</div>
+				</div>
+			</li>
+			<li>
+				<div class="foot-long-icon4 foot-long-icon foot-res"></div>
+				<div class="foot-long-desc">
+					<div class="btit">7Days</div>
+					<div class="stit">七天无理由换货</div>
+				</div>
+			</li>
+			<li>
+				<div class="foot-long-icon5 foot-long-icon foot-res"></div>
+				<div class="foot-long-desc">
+					<div class="btit">全渠道</div>
+					<div class="stit">线上线下同步服务</div>
+				</div>
+			</li>
+		</ul>
+		<!--foot-help-->
+		<div class="foot-help">
+			<div class="allHelp fl">
+				<div class="weibo-wechat">
+					<div class="weibo item fl">
+						<i class="foot-res"></i>
+						<p>微博</p>
+					</div>
+					<div class="wechat item fr">
+						<i class="foot-res"></i>
+						<p>微信</p>
+						<div class="wechat-tips" style="display: none;">
+							<i><em></em></i>
+							<div class="tips-cont">
+								<img src="images/wechat_tips.png" />
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="hotline">
+					<p class="tel-icon">客服热线：</p>
+					<p class="tel-text">
+						<span>400 - 184 - 8866</span>
+						<span>0755 - 28431129</span>
+					</p>
+				</div>
+				<div class="workday">
+					周一至周日：09:00-21:00
+				</div>
+			</div>
+			<div class="foot-split"></div>
+			<dl class="dl-help">
+				<dt>购物指南</dt>
+				<dd>
+					<a href="javascript:;">购物流程</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">用户注册</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">提交订单</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">找回密码</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">常见问题</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">跨境汇需知</a>
+				</dd>
+			</dl>
+			<div class="foot-split"></div>
+			<dl class="dl-help">
+				<dt>支付方式</dt>
+				<dd>
+					<a href="javascript:;">网银支付</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">第三方支付</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">支付常见问题</a>
+				</dd>
+			</dl>
+			<div class="foot-split"></div>
+			<dl class="dl-help">
+				<dt>配送方式</dt>
+				<dd>
+					<a href="javascript:;">配送服务查询</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">配送服务说明</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">验货与签收</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">包邮政策</a>
+				</dd>
+			</dl>
+			<div class="foot-split"></div>
+			<dl class="dl-help">
+				<dt>售后服务</dt>
+				<dd>
+					<a href="javascript:;">退换货政策</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">退换货说明</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">退换货流程</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">退换货管理</a>
+				</dd>
+				<dd>
+					<a href="javascript:;">跨境汇售后服务</a>
+				</dd>
+			</dl>
+			<div class="foot-split"></div>
+			<div class="foot-help-appMa fl">
+				<img src="images/appMa.gif" />
+			</div>
+		</div>
+		<!--foot-copyright-->
+		<div class="foot-copyright w_1200">
+			<div class="hp-copy">
+				<a href="javascripts:;">关于奥莱购</a>
+				<span>|</span>
+				<a href="javascripts:;">联系我们</a>
+				<span>|</span>
+				<a href="javascripts:;">诚聘英才</a>
+				<span>|</span>
+				<a href="javascripts:;">商务合作</a>
+				<span>|</span>
+				<a href="javascripts:;">友情链接</a>
+				<span>|</span>
+				<a href="javascripts:;">华南城网</a>
+				<span>|</span>
+				<a href="javascripts:;">华盛Outlets</a>
+			</div>
+			<div class="hp-copyright">
+				Copyright © 2013-2016 深圳华盛电子商务有限公司 粤ICP备16081451-1号 All Right <br><br> 深圳市龙岗区平湖华南城1号交易广场4楼奥莱购（深圳华盛电子商务有限公司）
+			</div>
+
+			<div class="friendlinks">
+				<a href="javascripts:;" class="foot-res cation1"></a>
+				<a href="javascripts:;" class="foot-res cation2"></a>
+				<a href="javascripts:;" class="foot-res cation3"></a>
+				<a href="javascripts:;" class="foot-res cation4"></a>
+				<a href="javascripts:;" class="foot-res cation5"></a>
+				<a href="javascripts:;" class="foot-res cation6"></a>
+				<a href="javascripts:;" class="foot-res cation7"></a>
+				<a href="javascripts:;" class="foot-res cation8"></a>
+				<a href="javascripts:;" class="foot-res cation9"></a>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!--主页尾部end--------------------------------------------------------------------------------------------->
+
+
+<!--登录头部login-header start------------------------------------------------------------------------------->
+
+			<div class="login-head w_1200 m_auto clear">
+				<div class="logo fl">
+					<a href="index.html" target="_blank">
+						<img src="images/logo.png">
+					</a>
+				</div>
+				<ul class="foot-long fr">
+					<li>
+						<div class="foot-long-icon1 foot-long-icon foot-res"></div>
+						<div class="foot-long-desc">
+							<div class="btit">100%</div>
+							<div class="stit">全场正品保证</div>
+						</div>
+					</li>
+					<li>
+						<div class="foot-long-icon3 foot-long-icon foot-res"></div>
+						<div class="foot-long-desc">
+							<div class="btit">SALE</div>
+							<div class="stit">每天低价特卖</div>
+						</div>
+					</li>
+					<li>
+						<div class="foot-long-icon4 foot-long-icon foot-res"></div>
+						<div class="foot-long-desc">
+							<div class="btit">7Days</div>
+							<div class="stit">七天无理由换货</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		
+<!--登录头部login-header end---------------------------------------------------------------------------------->
+
+<!--右侧导航栏start--------------------------------------------------------------------------------------------------->
+<div id="right" class="r_visiable clear">
+	<!--guide-->	
+	<ul class="right-guide fl">
+		<li>
+			<em style="left: 0px; width: 50px; display: none;">个人中心</em>
+			<div class="right-guide-cont">
+                <i class="right-guide-icon-res  guide-icon-1"></i>
+            </div>
+		</li>
+		<li>
+            <em style="left: 0px; width: 50px; display: none;"><a href="cart.html">购物车</a></em>
+            <div class="right-guide-cont">
+                <i class="right-guide-icon-res  guide-icon-2">
+                    <span class="guide-cart-num right-guide-icon-res"></span>
+                </i>
+            </div>
+        </li>
+        <li>
+            <em style="left: 0px; width: 50px; display: none;">我的收藏</em>
+            <div class="right-guide-cont" id="r_myFavo">
+                <i class="right-guide-icon-res  guide-icon-3"></i>
+            </div>
+        </li>
+        <li>
+            <em style="left: 0px; width: 50px; display: none;">优惠券</em>
+            <div class="right-guide-cont" id="r_myCoupon">
+                <i class="right-guide-icon-res  guide-icon-4"></i>
+            </div>
+        </li>
+        <li>
+            <em style="left: 0px; width: 50px; display: none;">我的足迹</em>
+            <div class="right-guide-cont" id="r_myTrace">
+                <i class="right-guide-icon-res  guide-icon-5 "></i>
+            </div>
+        </li>
+        <li>
+            <em style="left: 0px; width: 50px; display: none;">奥莱客服</em>
+            <div class="right-guide-cont">
+                <i class="right-guide-icon-res  guide-icon-6"></i>
+            </div>
+        </li>
+        <li id="scrollToTop">
+            <em style="left: 0px; width: 50px; display: none;">返回顶部</em>
+            <div class="right-guide-cont">
+                <i class="right-guide-icon-res  guide-icon-7"></i>
+            </div>
+        </li>
+	</ul>
+		
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

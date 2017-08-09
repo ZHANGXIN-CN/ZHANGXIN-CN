@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/*登录界面*/
+/*主体*/
+#login-main {
+  background: #ffffff;
+  width: 100%;
+  /*切换登录方式混合器*/ }
+  #login-main .cont {
+    height: 557px;
+    /*showImg*/ }
+    #login-main .cont .showImg {
+      width: 673px;
+      height: 558px;
+      overflow: hidden; }
+      #login-main .cont .showImg img {
+        display: block; }
+    #login-main .cont .myCenter {
+      padding-bottom: 10px;
+      width: 340px;
+      height: auto;
+      background: #fff;
+      border: 1px solid #d0d0d0;
+      margin-top: 75px;
+      position: relative; }
+      #login-main .cont .myCenter .register-btn {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        z-index: 1;
+        font-size: 13px; }
+        #login-main .cont .myCenter .register-btn a {
+          color: #FF7800; }
+      #login-main .cont .myCenter .dirLogi {
+        text-align: center;
+        color: #a7a7a7; }
+      #login-main .cont .myCenter .myCenter-res {
+        background: url("../images/right-myCenter.png") no-repeat; }
+      #login-main .cont .myCenter .other-login {
+        width: 50%;
+        margin: auto;
+        margin-top: 10px; }
+        #login-main .cont .myCenter .other-login li {
+          width: 50%;
+          float: left;
+          display: inline-block; }
+          #login-main .cont .myCenter .other-login li i {
+            display: block;
+            background-image: url("../images/login-box.png");
+            width: 30px;
+            height: 30px;
+            margin: auto; }
+          #login-main .cont .myCenter .other-login li .qq {
+            background-position: 0 -180px; }
+          #login-main .cont .myCenter .other-login li .wechat {
+            background-position: 0 -225px; }
+          #login-main .cont .myCenter .other-login li p {
+            width: 100%;
+            text-align: center;
+            color: #a7a7a7;
+            display: block;
+            line-height: 25px;
+            height: 25px; }
+      #login-main .cont .myCenter .myCenter-before #loginPc {
+        overflow: hidden;
+        position: relative;
+        /*登录表单*/ }
+        #login-main .cont .myCenter .myCenter-before #loginPc .myCenter-change {
+          background-position: -75px -75px;
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          cursor: pointer; }
+        #login-main .cont .myCenter .myCenter-before #loginPc form {
+          width: 240px;
+          margin: auto;
+          display: block;
+          /*验证*/
+          /*忘记密码*/
+          /*登录*/ }
+          #login-main .cont .myCenter .myCenter-before #loginPc form .inp-cont:nth-child(1) {
+            margin-top: 50px; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form #loginname {
+            background-image: url("../images/login-box.png");
+            background-repeat: no-repeat;
+            background-position: 0 -90px;
+            width: 100%; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form .myCenter-inpt {
+            line-height: 40px;
+            height: 40px;
+            border: 1px solid #D0D0D0;
+            border-radius: 10px;
+            background: #fff;
+            text-indent: 4em; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form .error {
+            line-height: 30px;
+            height: 30px;
+            color: red;
+            width: 95%;
+            margin: auto; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form #loginpwd {
+            background-image: url("../images/login-box.png");
+            background-repeat: no-repeat;
+            background-position: 0 -135px;
+            width: 100%; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form #txtVerCode {
+            width: 100px; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form #imgValidCode {
+            margin-top: 5px;
+            border-radius: 5px;
+            line-height: 28px;
+            height: 28px;
+            overflow: hidden;
+            cursor: pointer; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form .forgetPwd {
+            line-height: 40px; }
+            #login-main .cont .myCenter .myCenter-before #loginPc form .forgetPwd label {
+              text-align: left;
+              float: left;
+              display: inline-block;
+              width: 49.9%;
+              color: #a7a7a7; }
+              #login-main .cont .myCenter .myCenter-before #loginPc form .forgetPwd label input {
+                margin-right: 10px; }
+            #login-main .cont .myCenter .myCenter-before #loginPc form .forgetPwd a {
+              text-align: right;
+              float: left;
+              display: inline-block;
+              width: 49.9%;
+              color: #a7a7a7; }
+              #login-main .cont .myCenter .myCenter-before #loginPc form .forgetPwd a:hover {
+                color: #f34; }
+          #login-main .cont .myCenter .myCenter-before #loginPc form #login-btn {
+            width: 100%;
+            padding: 14px 0;
+            background: #C81417;
+            color: #FFF;
+            -webkit-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            border: none;
+            cursor: pointer; }
+            #login-main .cont .myCenter .myCenter-before #loginPc form #login-btn:hover {
+              background: #9a0f12; }
+      #login-main .cont .myCenter .myCenter-before #loginQR {
+        overflow: hidden;
+        position: relative;
+        /*切换登录方式*/ }
+        #login-main .cont .myCenter .myCenter-before #loginQR .myCenter-change {
+          background-position: 0 -75px;
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          cursor: pointer; }
+        #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont {
+          position: relative;
+          width: 170px;
+          height: 170px;
+          overflow: hidden;
+          margin: auto;
+          display: block;
+          margin-top: 50px; }
+          #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma {
+            width: 170px;
+            height: 170px;
+            margin: auto;
+            display: block; }
+          #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma-shadow {
+            width: 170px;
+            height: 170px; }
+            #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma-shadow .shadow-bg {
+              width: 170px;
+              height: 170px;
+              background: #000;
+              filter: alpha(opacity=60);
+              opacity: .6;
+              position: absolute;
+              top: 0;
+              left: 0; }
+            #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma-shadow .error-info {
+              color: #fff;
+              width: 100%;
+              text-align: center;
+              position: absolute;
+              top: 40%;
+              font-size: 14px; }
+            #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma-shadow .ma-error-btn {
+              position: absolute;
+              top: 115px;
+              left: 22%;
+              width: 100px; }
+            #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma-shadow .com-btn-red {
+              background: #C81417;
+              color: #FFF;
+              -webkit-transition: all ease .3s;
+              transition: all ease .3s; }
+              #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma-shadow .com-btn-red:hover {
+                background: #9a0f12; }
+            #login-main .cont .myCenter .myCenter-before #loginQR .login-ma-cont .login-ma-shadow .com-btn {
+              border-radius: 5px;
+              text-align: center;
+              display: block;
+              padding: 5px 0;
+              border: none;
+              cursor: pointer; }
+        #login-main .cont .myCenter .myCenter-before #loginQR .QRtips i {
+          width: 34px;
+          height: 34px;
+          background: url(../images/right-myCenter.png) no-repeat;
+          background-position: -75px 0; }
+        #login-main .cont .myCenter .myCenter-before #loginQR .QRtips a {
+          color: red; }
+      #login-main .cont .myCenter .myCenter-after .myCenter-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        margin: auto;
+        display: block;
+        margin-top: 20px; }
+      #login-main .cont .myCenter .myCenter-after .myCenter-name {
+        text-align: center;
+        line-height: 45px;
+        height: 45px;
+        font-size: 14px; }
+      #login-main .cont .myCenter .myCenter-after .myCenter-box {
+        background: #FAFAFA;
+        width: 100%;
+        height: 200px;
+        display: block; }
+        #login-main .cont .myCenter .myCenter-after .myCenter-box > li {
+          width: 49.9%;
+          height: 100px;
+          float: left;
+          position: relative;
+          overflow: hidden;
+          display: block; }
+          #login-main .cont .myCenter .myCenter-after .myCenter-box > li a {
+            display: block; }
+            #login-main .cont .myCenter .myCenter-after .myCenter-box > li a > i {
+              display: block;
+              margin: auto;
+              margin-top: 20px;
+              width: 32px;
+              height: 32px; }
+            #login-main .cont .myCenter .myCenter-after .myCenter-box > li a .box-cont-1 {
+              background-position: -255px 0; }
+            #login-main .cont .myCenter .myCenter-after .myCenter-box > li a .box-cont-2 {
+              background-position: -195px 0; }
+            #login-main .cont .myCenter .myCenter-after .myCenter-box > li a .box-cont-3 {
+              background-position: -315px 0; }
+            #login-main .cont .myCenter .myCenter-after .myCenter-box > li a .box-cont-4 {
+              background-position: -135px 0; }
+            #login-main .cont .myCenter .myCenter-after .myCenter-box > li a > p {
+              width: 100%;
+              text-align: center;
+              line-height: 30px;
+              height: 30px;
+              color: #a7a7a7; }
+      #login-main .cont .myCenter .myCenter-after .after-foot {
+        background: #C81417;
+        color: #FFF;
+        transition: all ease .3s;
+        border-radius: 5px;
+        text-align: center;
+        display: block;
+        padding: 5px 0;
+        border: none;
+        cursor: pointer; }
+        #login-main .cont .myCenter .myCenter-after .after-foot a {
+          color: #FFFFFF; }
+        #login-main .cont .myCenter .myCenter-after .after-foot:hover {
+          background: #9A0F12; }
+
+/*# sourceMappingURL=login.css.map */

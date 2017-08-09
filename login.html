@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>奥莱购---华盛奥特莱斯官方购物网站</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />	
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--登录头部-->
+		<div id="login-header" class="w_full bg_white"></div>
+		
+		<!--登录主体-->
+		<div id="login-main" class="">
+			<div class="cont w_1200 m_auto">
+				<!--展示图片-->
+				<div class="showImg fl">
+					<a href="#"><img src="images/showimg.jpg" /></a>
+				</div>
+				<!--登录中心-->
+				<div class="myCenter fr" style="display: block;">
+					<!--注册按钮-->
+					<div class="register-btn">
+						<a href="register.html" class="deep_orange">立即注册</a>
+					</div>
+					<!--登录前-->
+					<div class="myCenter-before" style="display: block;">
+						<!--普通登录-->
+						<div id="loginPc" style="display: block;">
+							<div id="cutloginPc" class="myCenter-res myCenter-change"></div>
+							<form method="post">
+								<!--用户名块-->
+								<div class="inp-cont">
+									<input type="text" name="loginname" class="myCenter-inpt" id="loginname" placeholder="请输入用户名" />
+									<div class="error"></div>
+								</div>
+								<!--密码框块-->
+								<div class="inp-cont">
+									<input type="password" name="loginpwd" class="myCenter-inpt" id="loginpwd" placeholder="请输入密码" />
+									<div class="error"></div>
+								</div>
+								<!--计算验证码-->
+								<div id="verificationCode" class="inp-cont clear" style="display: none;">  
+									<input type="text" id="txtVerCode" class="myCenter-inpt fl" name="txtVerCode" placeholder="计算结果" style="text-indent: 2em;"/>
+									<img id="imgValidCode" class="fl m_l_20" src="images/validcode1.gif" onclick="this.src='images/validcode' + Math.floor(Math.random()*6) + '.gif'" />
+								</div>
+								<!--忘记密码-->
+								<div class="forgetPwd">
+									<label><input type="checkbox" class="v_middle" id="chkrememberMe"/>记住密码</label>
+									<a href="javascript:;">忘记密码?</a>
+								</div>
+								<div class="inp-cont m_t_20">
+									<input type="button" id="login-btn" value="登录"/>
+								</div>
+							</form>
+							<div class="dirLogi inp-cont m_t_20">
+								无需注册，直接登录
+							</div>
+							<!--其他的登录方式-->
+							<ul class="other-login">
+								<li>
+									<a  href = "javascript:;">
+										<i class="qq"></i>
+										<p>QQ登录</p>
+									</a>
+								</li>
+								<li>
+									<a  href = "javascript:;">
+										<i class="wechat"></i>
+										<p>微信登录</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+						<!--二维码登录-->
+						<div id="loginQR" style="display: none;">
+							<div id="cutLoginQR" class="myCenter-change myCenter-res"></div>
+							<!--二维码-->
+							<div class="login-ma-cont">
+								<img class="login-ma" src="images/qrcode0.jpg">
+								<div class="login-ma-shadow" style="display: none;">
+                                    <div class="shadow-bg"></div>
+                                    <div class="error-info">二维码已失效</div>
+                                    <div id="divRefresh" class="com-btn com-btn-red ma-error-btn">刷新</div>
+                                </div>
+							</div>
+							<!--二维码提示-->
+							<div class="QRtips m_auto m_t_20 clear" style="width: 60%;">
+								<i class="fl"></i>
+								<div class="fr">
+                            		打开 <a href="javascript:;" class="red">最新版</a> 手机奥莱购
+                                <br>
+                                    扫一扫登录
+                                </div>
+							</div>
+							<div class="dirLogi inp-cont m_t_20">
+								无需注册，直接登录
+							</div>
+							<!--其他的登录方式-->
+							<ul class="other-login">
+								<li>
+									<a  href = "javascript:;">
+										<i class="qq"></i>
+										<p>QQ登录</p>
+									</a>
+								</li>
+								<li>
+									<a  href = "javascript:;">
+										<i class="wechat"></i>
+										<p>微信登录</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--登录后-->
+					<div class="myCenter-after" style="display: none;">
+						<img src="images/timg.jpg" class="myCenter-logo"/>
+						<p class="myCenter-name">
+							<span style="color: #FF7800;">哆啦A梦</span>,您好!
+						</p>
+						<ul class="myCenter-box">
+							<li>
+								<a href="javascript:;">
+									<i class="myCenter-res box-cont-1"></i>
+									<p>待付款</p>
+								</a>
+							</li>
+							<li style="background: #F5F5F5;">
+								<a href="javascript:;">
+									<i class="myCenter-res box-cont-2"></i>
+									<p>待发货</p>
+								</a>
+							</li>
+							<li style="background: #F5F5F5;">
+								<a href="javascript:;">
+									<i class="myCenter-res box-cont-3"></i>
+									<p>待收货</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<i class="myCenter-res box-cont-4"></i>
+									<p>进入订单</p>
+								</a>
+							</li>
+						</ul>
+						<div class="after-foot">
+							<a href="javascript:;">进入个人中心</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--与尾部的分割-->
+		<div class="w_full p_t_30 o_hidden"></div>
+		<!--尾部分页-->
+		<div class="footer m_auto w_1200"></div>
+		
+	</body>
+
+</html>

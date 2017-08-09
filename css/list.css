@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/*商品列表页*/
+.huo_dong_moban .i_h_d {
+  overflow: hidden;
+  width: 100%; }
+  .huo_dong_moban .i_h_d .i_h_z {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px; }
+    .huo_dong_moban .i_h_d .i_h_z .i_h_banner {
+      margin-left: -460px;
+      width: 1920px; }
+.huo_dong_moban .i_huo_tps {
+  overflow: hidden;
+  padding-bottom: 30px; }
+  .huo_dong_moban .i_huo_tps .i_margin {
+    width: 1022px;
+    margin: 0px auto; }
+    .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for {
+      margin: -11px 0px 0px -18px;
+      overflow: hidden;
+      position: relative;
+      zoom: 1; }
+      .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li {
+        width: 242.5px;
+        height: 372px;
+        margin-left: 10px;
+        float: left;
+        position: relative;
+        background: #fff;
+        margin: 11px 0px 0px 13px;
+        border: 1px solid #fff; }
+        .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li:hover {
+          border: 1px solid #ddd;
+          box-shadow: 0px 0px 5px #ddd; }
+        .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_p {
+          overflow: hidden;
+          width: 242.5px;
+          height: 242.5px; }
+          .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_p a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+            .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_p a img {
+              display: block;
+              width: 100%; }
+        .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_wu {
+          overflow: hidden;
+          margin-left: 12px;
+          margin-top: 8px; }
+          .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_wu .i_oi {
+            float: left;
+            height: 37px;
+            margin-right: 8px;
+            overflow: hidden;
+            position: relative;
+            width: 180px;
+            height: 38px; }
+            .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_wu .i_oi .i_dl {
+              float: left;
+              height: auto;
+              overflow: hidden;
+              position: absolute; }
+              .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_wu .i_oi .i_dl dd {
+                border: 1px solid #ddd;
+                text-align: center;
+                float: left;
+                margin-left: 7px;
+                width: 36px;
+                height: 36px; }
+                .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_wu .i_oi .i_dl dd img {
+                  display: block;
+                  width: 100%;
+                  height: 100%; }
+              .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_wu .i_oi .i_dl dd.select {
+                border-color: #ff3344; }
+        .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_tps {
+          margin: 20px 8px 0;
+          overflow: hidden;
+          text-align: left;
+          width: auto;
+          height: 15px;
+          margin-top: 9px; }
+          .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_tps a {
+            float: left;
+            color: #6c6c6c; }
+        .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_jia {
+          margin-top: 0px;
+          padding: 0 8px;
+          text-align: center; }
+          .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_jia .i_stu {
+            color: #ff3344;
+            font-family: 微软雅黑;
+            line-height: 1;
+            font-size: 21px;
+            position: absolute;
+            left: 12px;
+            bottom: 15px;
+            z-index: 1;
+            display: block;
+            width: 126px;
+            text-align: center;
+            margin: 0; }
+          .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_jia del {
+            color: #b6b2b2;
+            font-family: 黑体;
+            text-decoration: line-through;
+            font-size: 12px; }
+            .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_jia del .pri_label {
+              display: inline; }
+        .huo_dong_moban .i_huo_tps .i_margin ul.i_cen_for li .i_tpian {
+          position: absolute;
+          left: 12px;
+          right: 12px;
+          bottom: 12px; }
+
+/*# sourceMappingURL=list.css.map */
