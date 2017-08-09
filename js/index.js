@@ -222,10 +222,14 @@ $(function() {
 
 	//搜索悬浮框end---------------------------------------------------------------
 
+	//获取现在的时间
+	var dateNow = new Date();
+	dateNow.setDate(dateNow.getDate() + 0.2);
 	//倒计时start countDown.js
 	$(".time-item").countDown({
 		startTimeStr: '2017/08/01 00:00:00', //开始时间
-		endTimeStr: '2017/08/15 24:00:00', //结束时间
+		endTimeStr : dateNow ,
+		//endTimeStr: '2017/08/15 24:00:00', //结束时间
 		hourSelector: ".hour_num",
 		minSelector: ".min_num",
 		secSelector: ".sec_num"
