@@ -175,6 +175,8 @@ $(function(){
 	    	}
 	    });
 	    //删除全部商品
+	    //添加事件之前先清除一次绑定的事件,动态记载子页面,会给元素多次绑定事件 
+	    $("#btn-deleteAll").unbind('click');
 	    $("#btn-deleteAll").click(function(){
     	 	var deleteOk=confirm("您确定删除该购物车明细记录吗?")
 	    	if (deleteOk){
