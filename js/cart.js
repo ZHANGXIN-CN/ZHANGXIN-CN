@@ -172,6 +172,7 @@ $(function(){
 				var cart = JSON.stringify(cartObj);
 				$.cookie("cart",cart,{"expires":7,"path":"/"});  //存cookie 		
 				cutTemplate();    //初始化页面信息
+				init(".top-r li .num");    //初始化头部购物车
 	    	}
 	    });
 	    //删除全部商品
